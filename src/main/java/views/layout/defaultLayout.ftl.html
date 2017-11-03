@@ -1,0 +1,100 @@
+<#macro myLayout title="Layout example">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Offshore - Responsive HTML Template">
+<meta name="author" content="Surjith S.M">
+
+<title>Offshore - Responsive Gas &amp; Oil Industry HTML Template</title>
+
+<script type="text/javascript">
+//<![CDATA[
+//try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"ff3e4d811accaba3ee63fc247195442c",petok:"0a989fe228f31d8cb137fa6c8d0c0c8431bdf7c6-1476521987-3600",zone:"web3canvas.com",rocket:"0",apps:{"abetterbrowser":{"ie":"7","opera":null,"chrome":null,"safari":null,"firefox":null},"ga_key":{"ua":"UA-38030533-1","ga_bs":"2"}}}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=088620b277/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<link rel="icon" type="image/png" href="/assets/images/favicon.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="/assets/css/flexslider.css">
+
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.min.css">
+
+<link href="/assets/css/style.css" rel="stylesheet">
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-38030533-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+(function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+/* ]]> */
+</script>
+</head>
+<body class="homepage">
+	<div class="loader-wrapper">
+		<div class="sk-cube-grid">
+			<div class="sk-cube sk-cube1"></div>
+			<div class="sk-cube sk-cube2"></div>
+			<div class="sk-cube sk-cube3"></div>
+			<div class="sk-cube sk-cube4"></div>
+			<div class="sk-cube sk-cube5"></div>
+			<div class="sk-cube sk-cube6"></div>
+			<div class="sk-cube sk-cube7"></div>
+			<div class="sk-cube sk-cube8"></div>
+			<div class="sk-cube sk-cube9"></div>
+		</div>
+	</div>
+
+	<div class="wrapper">
+
+		<#include "header.ftl.html"/> <#if (flash.error)??>
+		<div class="alert alert-danger">${flash.error}</div>
+		</#if> <#if (flash.success)??>
+		<div class="alert alert-success">${flash.success}</div>
+		</#if> <#nested/> <#include "footer.ftl.html"/>
+
+	</div>
+	<!-- /container -->
+	<script type="text/javascript" src="/assets/webjars/jquery/2.1.3/jquery.js"></script>
+	<script type="text/javascript" src="/assets/webjars/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<a href="#0" class="cd-top"> Top </a>
+	</div>
+
+
+
+	<script src="/assets/js/jquery.min.js"></script>
+
+	<script src="/assets/js/bootstrap.min.js"></script>
+
+	<script src="/assets/js/jquery.flexslider-min.js"></script>
+
+	<script src="/assets/js/owl.carousel.min.js"></script>
+
+	<script src="/assets/js/waypoints.min.js"></script>
+	<script src="/assets/js/jquery.counterup.min.js"></script>
+
+	<script src="/assets/js/back-to-top.js"></script>
+
+	<script src="/assets/js/validate.js"></script>
+
+	<script src="/assets/js/subscribe.js"></script>
+
+	<script src="/assets/js/main.js"></script>
+</body>
+</html>
+</#macro>

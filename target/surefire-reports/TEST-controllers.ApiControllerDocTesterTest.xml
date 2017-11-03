@@ -1,0 +1,2045 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="2" failures="1" name="controllers.ApiControllerDocTesterTest" time="2.494" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_102\jre\bin"/>
+    <property name="java.vm.version" value="25.102-b14"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Zikki\Documents\Workspace_\pt-cie"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="ID"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Zikki\Documents\Workspace_\pt-cie"/>
+    <property name="java.runtime.version" value="1.8.0_102-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_102\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Zikki\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Program Files\Apache\maven\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_102\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_102\bin;C:\Program Files\Apache\maven\bin;C:\Program Files\Apache\apache-ant-1.9.7\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\WinMerge;C:\Program Files\nodejs\;C:\Program Files (x86)\Skype\Phone\;C:\Users\Zikki\AppData\Local\Microsoft\WindowsApps;C:\Users\Zikki\AppData\Roaming\npm;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Zikki"/>
+    <property name="user.timezone" value="Asia/Bangkok"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Zikki"/>
+    <property name="java.class.path" value="C:\Program Files\Apache\maven\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_102\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package ninja:run"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_102"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_102\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_102\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_102\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_102\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_102\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_102\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_102\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_102\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_102\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp850"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\Apache\maven"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp850"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="controllers.ApiControllerDocTesterTest" name="testGetIndex" time="2.322">
+    <failure message="
+Expected: a string containing &quot;Hello World!&quot;
+     but: was &quot; &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+&lt;meta name=&quot;description&quot; content=&quot;Offshore - Responsive HTML Template&quot;&gt;
+&lt;meta name=&quot;author&quot; content=&quot;Surjith S.M&quot;&gt;
+
+&lt;title&gt;Offshore - Responsive Gas &amp;amp; Oil Industry HTML Template&lt;/title&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+//&lt;![CDATA[
+//try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:&quot;cf&quot;,bag2:1,mirage2:0,oracle:0,paths:{cloudflare:&quot;/cdn-cgi/nexp/dok3v=1613a3a185/&quot;},atok:&quot;ff3e4d811accaba3ee63fc247195442c&quot;,petok:&quot;0a989fe228f31d8cb137fa6c8d0c0c8431bdf7c6-1476521987-3600&quot;,zone:&quot;web3canvas.com&quot;,rocket:&quot;0&quot;,apps:{&quot;abetterbrowser&quot;:{&quot;ie&quot;:&quot;7&quot;,&quot;opera&quot;:null,&quot;chrome&quot;:null,&quot;safari&quot;:null,&quot;firefox&quot;:null},&quot;ga_key&quot;:{&quot;ua&quot;:&quot;UA-38030533-1&quot;,&quot;ga_bs&quot;:&quot;2&quot;}}}];!function(a,b){a=document.createElement(&quot;script&quot;),b=document.getElementsByTagName(&quot;script&quot;)[0],a.async=!0,a.src=&quot;//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=088620b277/cloudflare.min.js&quot;,b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]&gt;
+&lt;/script&gt;
+&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;/assets/images/favicon.png&quot;&gt;
+
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+
+&lt;link href=&quot;/assets/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/fonts/font-awesome/css/font-awesome.min.css&quot;&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/flexslider.css&quot;&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/owl.carousel.min.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/owl.theme.min.css&quot;&gt;
+
+&lt;link href=&quot;/assets/css/style.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+/* &lt;![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push([&apos;_setAccount&apos;, &apos;UA-38030533-1&apos;]);
+_gaq.push([&apos;_trackPageview&apos;]);
+
+(function() {
+var ga = document.createElement(&apos;script&apos;); ga.type = &apos;text/javascript&apos;; ga.async = true;
+ga.src = (&apos;https:&apos; == document.location.protocol ? &apos;https://ssl&apos; : &apos;http://www&apos;) + &apos;.google-analytics.com/ga.js&apos;;
+var s = document.getElementsByTagName(&apos;script&apos;)[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+(function(b){(function(a){&quot;__CF&quot;in b&amp;&amp;&quot;DJS&quot;in b.__CF?b.__CF.DJS.push(a):&quot;addEventListener&quot;in b?b.addEventListener(&quot;load&quot;,a,!1):b.attachEvent(&quot;onload&quot;,a)})(function(){&quot;FB&quot;in b&amp;&amp;&quot;Event&quot;in FB&amp;&amp;&quot;subscribe&quot;in FB.Event&amp;&amp;(FB.Event.subscribe(&quot;edge.create&quot;,function(a){_gaq.push([&quot;_trackSocial&quot;,&quot;facebook&quot;,&quot;like&quot;,a])}),FB.Event.subscribe(&quot;edge.remove&quot;,function(a){_gaq.push([&quot;_trackSocial&quot;,&quot;facebook&quot;,&quot;unlike&quot;,a])}),FB.Event.subscribe(&quot;message.send&quot;,function(a){_gaq.push([&quot;_trackSocial&quot;,&quot;facebook&quot;,&quot;send&quot;,a])}));&quot;twttr&quot;in b&amp;&amp;&quot;events&quot;in twttr&amp;&amp;&quot;bind&quot;in twttr.events&amp;&amp;twttr.events.bind(&quot;tweet&quot;,function(a){if(a){var b;if(a.target&amp;&amp;a.target.nodeName==&quot;IFRAME&quot;)a:{if(a=a.target.src){a=a.split(&quot;#&quot;)[0].match(/[^?=&amp;]+=([^&amp;]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf(&quot;url&quot;)===0){b=unescape(c.split(&quot;=&quot;)[1]);break a}}b=void 0}_gaq.push([&quot;_trackSocial&quot;,&quot;twitter&quot;,&quot;tweet&quot;,b])}})})})(window);
+/* ]]&gt; */
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body class=&quot;homepage&quot;&gt;
+	&lt;div class=&quot;loader-wrapper&quot;&gt;
+		&lt;div class=&quot;sk-cube-grid&quot;&gt;
+			&lt;div class=&quot;sk-cube sk-cube1&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;sk-cube sk-cube2&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;sk-cube sk-cube3&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;sk-cube sk-cube4&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;sk-cube sk-cube5&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;sk-cube sk-cube6&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;sk-cube sk-cube7&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;sk-cube sk-cube8&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;sk-cube sk-cube9&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;wrapper&quot;&gt;
+
+		&lt;header&gt;
+	&lt;div class=&quot;header-area&quot;&gt;
+
+		&lt;div class=&quot;row logo-top-info&quot;&gt;
+			&lt;div class=&quot;container&quot;&gt;
+				&lt;div class=&quot;col-md-3 logo&quot;&gt;
+
+					&lt;a href=&quot;index.html&quot;&gt;&lt;img src=&quot;/assets/images/logo.png&quot; alt=&quot;Offshore Logo&quot; /&gt;&lt;/a&gt;
+
+					&lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbar&quot;&gt;
+						&lt;span class=&quot;sr-only&quot;&gt; Main Menu &lt;/span&gt; &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt; &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt; &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+					&lt;/button&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;col-md-9 top-info-social&quot;&gt;
+					&lt;div class=&quot;pull-right&quot;&gt;
+						&lt;div class=&quot;top-info&quot;&gt;
+							&lt;div class=&quot;call&quot;&gt;
+								&lt;h3&gt;CALL US&lt;/h3&gt;
+								&lt;p&gt;1800 425 4646&lt;/p&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;email&quot;&gt;
+								&lt;h3&gt;EMAIL US&lt;/h3&gt;
+								&lt;p&gt;
+									&lt;a class=&quot;__cf_email__&quot; href=&quot;/cdn-cgi/l/email-protection&quot; data-cfemail=&quot;7a13141c153a151c1c091215081f1314090f090e080354191517&quot;&gt;[email&amp;#160;protected]&lt;/a&gt;
+									&lt;script data-cfhash=&apos;f9e31&apos; type=&quot;text/javascript&quot;&gt;
+										/* &lt;![CDATA[ */!function(t, e, r, n,
+												c, a, p) {
+											try {
+												t = document.currentScript
+														|| function() {
+															for (
+																	t = document
+																			.getElementsByTagName(&apos;script&apos;),
+																	e = t.length; e--;)
+																if (t[e]
+																		.getAttribute(&apos;data-cfhash&apos;))
+																	return t[e]
+														}();
+												if (t
+														&amp;&amp; (c = t.previousSibling)) {
+													p = t.parentNode;
+													if (a = c
+															.getAttribute(&apos;data-cfemail&apos;)) {
+														for (
+																e = &apos;&apos;,
+																r = &apos;0x&apos;
+																		+ a
+																				.substr(
+																						0,
+																						2)
+																		| 0,
+																n = 2; a.length
+																- n; n += 2)
+															e += &apos;%&apos;
+																	+ (&apos;0&apos; + (&apos;0x&apos;
+																			+ a
+																					.substr(
+																							n,
+																							2) ^ r)
+																			.toString(16))
+																			.slice(-2);
+														p
+																.replaceChild(
+																		document
+																				.createTextNode(decodeURIComponent(e)),
+																		c)
+													}
+													p.removeChild(t)
+												}
+											} catch (u) {
+											}
+										}()/* ]]&gt; */
+									&lt;/script&gt;
+								&lt;/p&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;market&quot;&gt;
+								&lt;h3&gt;MARKET&lt;/h3&gt;
+								&lt;p&gt;
+									256.78 &lt;span class=&quot;forex&quot;&gt; &lt;i class=&quot;fa fa-caret-up&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; + 4.26
+									&lt;/span&gt;
+								&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class=&quot;social&quot;&gt;
+							&lt;ul class=&quot;social-icons&quot;&gt;
+								&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;nav id=&quot;navbar&quot; class=&quot;collapse navbar-collapse main-menu&quot;&gt;
+			&lt;div class=&quot;container&quot;&gt;
+				&lt;ul class=&quot;main-menu&quot;&gt;
+					&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;index.html&quot;&gt; Home &lt;/a&gt;&lt;/li&gt;
+					&lt;li class=&quot;dropdown&quot;&gt;&lt;a href=&quot;#&quot; data-toggle=&quot;dropdown&quot;&gt; About &lt;i class=&quot;fa fa-chevron-down dropdown-toggle&quot;&gt; &lt;/i&gt;
+					&lt;/a&gt;
+						&lt;ul&gt;
+							&lt;li&gt;&lt;a href=&quot;about.html&quot;&gt; The Company &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;mission.html&quot;&gt; Vision &amp;amp; Mission &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;approach.html&quot;&gt; Our Approach &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;leaders.html&quot;&gt; Our Team &lt;/a&gt;&lt;/li&gt;
+						&lt;/ul&gt;&lt;/li&gt;
+					&lt;li class=&quot;dropdown&quot;&gt;&lt;a href=&quot;#&quot; data-toggle=&quot;dropdown&quot;&gt; Services &lt;i class=&quot;fa fa-chevron-down dropdown-toggle&quot;&gt; &lt;/i&gt;
+					&lt;/a&gt;
+						&lt;ul&gt;
+							&lt;li&gt;&lt;a href=&quot;services.html&quot;&gt; Services List &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;services-list.html&quot;&gt; Services List Fullwidth &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;services-single.html&quot;&gt; Services Single &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;services-full-width.html&quot;&gt; Services Full Width &lt;/a&gt;&lt;/li&gt;
+						&lt;/ul&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;technology.html&quot;&gt; Technology &lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;blog.html&quot;&gt; News &amp;amp; Media &lt;/a&gt;&lt;/li&gt;
+					&lt;li class=&quot;dropdown&quot;&gt;&lt;a href=&quot;#&quot; data-toggle=&quot;dropdown&quot;&gt; Pages &lt;i class=&quot;fa fa-chevron-down dropdown-toggle&quot;&gt; &lt;/i&gt;
+					&lt;/a&gt;
+						&lt;ul&gt;
+							&lt;li&gt;&lt;a href=&quot;blog.html&quot;&gt; Blog &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;blog-single.html&quot;&gt; Blog Single &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;careers-single.html&quot;&gt; Careers Single &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;shortcodes.html&quot;&gt; Shortcodes &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;404.html&quot;&gt; 404 page &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;blank-page.html&quot;&gt; Blank Page &lt;/a&gt;&lt;/li&gt;
+						&lt;/ul&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;careers.html&quot;&gt; CAREERS &lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;contact.html&quot;&gt; CONTACT &lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/nav&gt;
+	&lt;/div&gt;
+&lt;/header&gt;   
+
+
+&lt;!DOCTYPE html&gt;
+
+&lt;main class=&quot;main&quot;&gt;
+&lt;section class=&quot;home-slider&quot;&gt;
+	&lt;div class=&quot;flexslider&quot;&gt;
+		&lt;ul class=&quot;slides&quot;&gt;
+			&lt;li class=&quot;has-overlay&quot;&gt;&lt;img src=&quot;/assets/images/slider1.jpg&quot; alt=&quot;Slider 1&quot; /&gt;
+				&lt;div class=&quot;slider-content&quot;&gt;
+					&lt;div class=&quot;container&quot;&gt;
+						&lt;h2&gt;
+							Targeting high impact exploration &lt;br&gt; Offshore Industry
+						&lt;/h2&gt;
+						&lt;p&gt;
+							Holisticly brand sustainable solutions rather than clicks-and-mortar applications. &lt;br&gt; Phosfluorescently whiteboard fully tested initiatives.
+						&lt;/p&gt;
+						&lt;a class=&quot;btn primary-btn&quot;&gt; KNOW MORE &lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;&lt;/li&gt;
+			&lt;li class=&quot;has-overlay&quot;&gt;&lt;img src=&quot;/assets/images/slider2.jpg&quot; alt=&quot;Slider 2&quot; /&gt;
+				&lt;div class=&quot;slider-content text-center&quot;&gt;
+					&lt;div class=&quot;container&quot;&gt;
+						&lt;h2&gt;Most sophisticated Storage &amp;amp; Transport&lt;/h2&gt;
+						&lt;p&gt;
+							Quickly disintermediate collaborative web services via high standards in products. &lt;br&gt; Compellingly fabricate cutting-edge portals through alternative &lt;br&gt; opportunities. Objectively customize.
+						&lt;/p&gt;
+						&lt;a class=&quot;btn primary-btn&quot;&gt; KNOW MORE &lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;home-company&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;row company&quot;&gt;
+			&lt;div class=&quot;col-md-5 col-sm-8&quot;&gt;
+				&lt;div class=&quot;company-details&quot;&gt;
+					&lt;h2 class=&quot;company-title color-title&quot;&gt;THE COMPANY&lt;/h2&gt;
+					&lt;h4 class=&quot;company-subtitle subtitle&quot;&gt;Interactively empower diverse imperatives after prospective convergence.&lt;/h4&gt;
+					&lt;p&gt;Assertively productize efficient partnerships through customer directed supply chains. Continually maintain process-centric catalysts for change via backward compatible value.&lt;/p&gt;
+					&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot; role=&quot;button&quot;&gt; READ OUR MISSION &lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-7 col-sm-12&quot;&gt;
+				&lt;div class=&quot;company-image&quot;&gt;
+					&lt;div class=&quot;img-left hover-effect&quot;&gt;
+						&lt;img src=&quot;/assets/images/company-image2.jpg&quot; alt=&quot;Company Image&quot; /&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;img-right hover-effect&quot;&gt;
+						&lt;img src=&quot;/assets/images/company-image1.jpg&quot; alt=&quot;Company Image&quot; /&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;home-ceo&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;row ceo&quot;&gt;
+			&lt;div class=&quot;col-md-6&quot;&gt;
+				&lt;div class=&quot;ceo-photo&quot;&gt;
+					&lt;img src=&quot;/assets/images/ceo.png&quot; alt=&quot;CEO&quot; /&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-6&quot;&gt;
+				&lt;div class=&quot;ceo-details&quot;&gt;
+					&lt;h2 class=&quot;ceo-title color-title&quot;&gt;WORD FROM CEO&lt;/h2&gt;
+					&lt;h4 class=&quot;ceo-subtitle subtitle&quot;&gt;READ THE MESSAGE FROM OUR CEO&lt;/h4&gt;
+					&lt;p&gt;Proactively incubate enterprise total linkage without sustainable leadership skills. Monotonectally strategize user-centric interfaces whereas low-risk high-yield materials. Efficiently syndicate web-enabled portals for principle centered partnerships.&lt;/p&gt;
+					&lt;p&gt;Proactively whiteboard revolutionary processes after scalable testing procedures. Holisticly reinvent seamless after business.&lt;/p&gt;
+					&lt;h4 class=&quot;ceo-sign&quot;&gt;
+						&lt;img src=&quot;/assets/images/ceo-sign.png&quot; alt=&quot;signature&quot; /&gt;
+					&lt;/h4&gt;
+					&lt;p class=&quot;ceo-name&quot;&gt;Gregory Walker, CEO&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;home-services&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;row services&quot;&gt;
+			&lt;div class=&quot;col-md-4&quot;&gt;
+				&lt;div class=&quot;hover-effect&quot;&gt;
+					&lt;img src=&quot;/assets/images/services-one.jpg&quot; alt=&quot;technology-innovation&quot; /&gt;
+				&lt;/div&gt;
+				&lt;h4 class=&quot;services-title-one subtitle&quot;&gt;TECHNOLOGY &amp;amp; INNOVATION&lt;/h4&gt;
+				&lt;p&gt;Professionally drive clicks-and-mortar web readiness after progressive e-commerce. Dramatically unleash cross functional.&lt;/p&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn btn-default btn-normal&quot;&gt;Read More&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-4&quot;&gt;
+				&lt;div class=&quot;hover-effect&quot;&gt;
+					&lt;img src=&quot;/assets/images/services-two.jpg&quot; alt=&quot;our-operations&quot; /&gt;
+				&lt;/div&gt;
+				&lt;h4 class=&quot;services-title-one subtitle&quot;&gt;OUR OPERATIONS&lt;/h4&gt;
+				&lt;p&gt;Energistically productize wireless mindshare for emerging experiences. Myocardinate enabled alignments and magnetic scenarios.&lt;/p&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn btn-default btn-normal&quot;&gt;Read More&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-4&quot;&gt;
+				&lt;div class=&quot;hover-effect&quot;&gt;
+					&lt;img src=&quot;/assets/images/services-three.jpg&quot; alt=&quot;social-resposibility&quot; /&gt;
+				&lt;/div&gt;
+				&lt;h4 class=&quot;services-title-one subtitle&quot;&gt;SOCIAL RESPONIBILITY&lt;/h4&gt;
+				&lt;p&gt;Globally incubate principle-centered e-markets with standards compliant catalysts for change. Efficiently extend highly efficient products.&lt;/p&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn btn-default btn-normal&quot;&gt;Read More&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;home-links&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;row links&quot;&gt;
+			&lt;div class=&quot;col-md-2&quot;&gt;
+				&lt;h4 class=&quot;links-title subtitle&quot;&gt;Quick Links&lt;/h4&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-2&quot;&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot; role=&quot;button&quot;&gt;CAREERS&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-2&quot;&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot; role=&quot;button&quot;&gt;CONTACT&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-2&quot;&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot; role=&quot;button&quot;&gt;MARKET INFO&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-2&quot;&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot; role=&quot;button&quot;&gt;TECHNOLOGY&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-2&quot;&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot; role=&quot;button&quot;&gt;LATEST NEWS&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;home-process&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;row process&quot;&gt;
+			&lt;div class=&quot;col-sm-6&quot;&gt;
+				&lt;h2 class=&quot;process-title title-2&quot;&gt;OUR PROCESS&lt;/h2&gt;
+				&lt;h4 class=&quot;process-subtitle subtitle-2&quot;&gt;Interactively empower diverse imperatives after prospective convergence.&lt;/h4&gt;
+				&lt;p&gt;Interactively fashion functional action items after 24/365 results. Dynamically redefine world-class metrics without leading-edge markets. Progressively orchestrate enabled &quot;outside the box&quot; thinking via scalable quality vectors. Objectively unleash optimal core competencies.&lt;/p&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot; role=&quot;button&quot;&gt;READ THE STORY&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-6&quot;&gt;
+				&lt;div id=&quot;skills&quot; class=&quot;process-bar&quot;&gt;
+					&lt;div class=&quot;skillbar-title&quot;&gt;FEUL AND MISCELLANEOUS&lt;/div&gt;
+					&lt;div class=&quot;skillbar&quot; data-percent=&quot;46%&quot;&gt;
+						&lt;div class=&quot;skillbar-bar&quot;&gt;&lt;/div&gt;
+						&lt;div class=&quot;skill-bar-percent&quot;&gt;46%&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;skillbar-title&quot;&gt;LIQUID CHEMICALS&lt;/div&gt;
+					&lt;div class=&quot;skillbar&quot; data-percent=&quot;78%&quot;&gt;
+						&lt;div class=&quot;skillbar-bar&quot;&gt;&lt;/div&gt;
+						&lt;div class=&quot;skill-bar-percent&quot;&gt;78%&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;skillbar-title&quot;&gt;MONOMERS / POLYMERS&lt;/div&gt;
+					&lt;div class=&quot;skillbar&quot; data-percent=&quot;70%&quot;&gt;
+						&lt;div class=&quot;skillbar-bar&quot;&gt;&lt;/div&gt;
+						&lt;div class=&quot;skill-bar-percent&quot;&gt;70%&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;skillbar-title&quot;&gt;ISOCYANATE&lt;/div&gt;
+					&lt;div class=&quot;skillbar&quot; data-percent=&quot;80%&quot;&gt;
+						&lt;div class=&quot;skillbar-bar&quot;&gt;&lt;/div&gt;
+						&lt;div class=&quot;skill-bar-percent&quot;&gt;80%&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;home-stats&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;row stats&quot;&gt;
+			&lt;div class=&quot;col-md-3 col-xs-6&quot;&gt;
+				&lt;img src=&quot;/assets/images/globe.png&quot; alt=&quot;&quot; /&gt;
+				&lt;div class=&quot;stats-info&quot;&gt;
+					&lt;h4 class=&quot;counter&quot;&gt;26&lt;/h4&gt;
+					&lt;p&gt;Offices Worldwide&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-3 col-xs-6&quot;&gt;
+				&lt;img src=&quot;/assets/images/friends.png&quot; alt=&quot;&quot; /&gt;
+				&lt;div class=&quot;stats-info&quot;&gt;
+					&lt;h4 class=&quot;counter&quot;&gt;10000&lt;/h4&gt;
+					&lt;p&gt;Satisfied Employees&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-3 col-xs-6&quot;&gt;
+				&lt;img src=&quot;/assets/images/fire.png&quot; alt=&quot;&quot; /&gt;
+				&lt;div class=&quot;stats-info&quot;&gt;
+					&lt;h4 class=&quot;counter&quot;&gt;126&lt;/h4&gt;
+					&lt;p&gt;Refineries &amp;amp; Operations&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-3 col-xs-6&quot;&gt;
+				&lt;img src=&quot;/assets/images/badge.png&quot; alt=&quot;&quot; /&gt;
+				&lt;div class=&quot;stats-info&quot;&gt;
+					&lt;h4 class=&quot;counter&quot;&gt;35&lt;/h4&gt;
+					&lt;p&gt;Awards &amp;amp; Recognitions&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;home-services-other&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;section-title text-center&quot;&gt;
+			&lt;h2 class=&quot;title-services-other title-2&quot;&gt;SERVICES&lt;/h2&gt;
+			&lt;h4 class=&quot;subtitle-services-other subtitle-2&quot;&gt;
+				Objectively whiteboard transparent models for prospective &lt;br /&gt; information. Authoritatively myocardinate.
+			&lt;/h4&gt;
+			&lt;div class=&quot;spacer-50&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;row services-other&quot;&gt;
+			&lt;div class=&quot;col-sm-4&quot;&gt;
+				&lt;div class=&quot;img-box&quot;&gt;
+					&lt;img src=&quot;/assets/images/service-icon1.png&quot; alt=&quot;SHELL CHEMICALS&quot; /&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;services-info&quot;&gt;
+					&lt;h4 class=&quot;services-title-one subtitle&quot;&gt;SHELL CHEMICALS&lt;/h4&gt;
+					&lt;p&gt;Lorem ipsum dolor sit amet, con tetur adipiscing elit agenean.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-4&quot;&gt;
+				&lt;div class=&quot;img-box&quot;&gt;
+					&lt;img src=&quot;/assets/images/service-icon2.png&quot; alt=&quot;COMMERCIAL FUELS&quot; /&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;services-info&quot;&gt;
+					&lt;h4 class=&quot;services-title-one subtitle&quot;&gt;COMMERCIAL FUELS&lt;/h4&gt;
+					&lt;p&gt;Lorem ipsum dolor sit amet, con tetur adipiscing elit agenean.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-4&quot;&gt;
+				&lt;div class=&quot;img-box&quot;&gt;
+					&lt;img src=&quot;/assets/images/service-icon3.png&quot; alt=&quot;AVIATION FUELS&quot; /&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;services-info&quot;&gt;
+					&lt;h4 class=&quot;services-title-one subtitle&quot;&gt;AVIATION FUELS&lt;/h4&gt;
+					&lt;p&gt;Lorem ipsum dolor sit amet, con tetur adipiscing elit agenean.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;clearfix spacer-70&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;col-sm-4&quot;&gt;
+				&lt;div class=&quot;img-box&quot;&gt;
+					&lt;img src=&quot;/assets/images/service-icon4.png&quot; alt=&quot;LUBRICANTS&quot; /&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;services-info&quot;&gt;
+					&lt;h4 class=&quot;services-title-one subtitle&quot;&gt;LUBRICANTS&lt;/h4&gt;
+					&lt;p&gt;Lorem ipsum dolor sit amet, con tetur adipiscing elit agenean.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-4&quot;&gt;
+				&lt;div class=&quot;img-box&quot;&gt;
+					&lt;img src=&quot;/assets/images/service-icon5.png&quot; alt=&quot;MARINE FUELS&quot; /&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;services-info&quot;&gt;
+					&lt;h4 class=&quot;services-title-one subtitle&quot;&gt;MARINE FUELS&lt;/h4&gt;
+					&lt;p&gt;Lorem ipsum dolor sit amet, con tetur adipiscing elit agenean.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-4&quot;&gt;
+				&lt;div class=&quot;img-box&quot;&gt;
+					&lt;img src=&quot;/assets/images/service-icon6.png&quot; alt=&quot;LIQUIFIED PETROLIUM GAS&quot; /&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;services-info&quot;&gt;
+					&lt;h4 class=&quot;services-title-one subtitle&quot;&gt;LIQUIFIED PETROLIUM GAS&lt;/h4&gt;
+					&lt;p&gt;Lorem ipsum dolor sit amet, con tetur adipiscing elit agenean.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;clearfix spacer-70&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;col-sm-4&quot;&gt;
+				&lt;div class=&quot;img-box&quot;&gt;
+					&lt;img src=&quot;/assets/images/service-icon7.png&quot; alt=&quot;SHELL SULPHUR&quot; /&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;services-info&quot;&gt;
+					&lt;h4 class=&quot;services-title-one subtitle&quot;&gt;SHELL SULPHUR&lt;/h4&gt;
+					&lt;p&gt;Lorem ipsum dolor sit amet, con tetur adipiscing elit agenean.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-4&quot;&gt;
+				&lt;div class=&quot;img-box&quot;&gt;
+					&lt;img src=&quot;/assets/images/service-icon8.png&quot; alt=&quot;SHELL TRADING&quot; /&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;services-info&quot;&gt;
+					&lt;h4 class=&quot;services-title-one subtitle&quot;&gt;SHELL TRADING&lt;/h4&gt;
+					&lt;p&gt;Lorem ipsum dolor sit amet, con tetur adipiscing elit agenean.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-4&quot;&gt;
+				&lt;div class=&quot;img-box&quot;&gt;
+					&lt;img src=&quot;/assets/images/service-icon9.png&quot; alt=&quot;SHELL FOR SUPPLIERS&quot; /&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;services-info&quot;&gt;
+					&lt;h4 class=&quot;services-title-one subtitle&quot;&gt;SHELL FOR SUPPLIERS&lt;/h4&gt;
+					&lt;p&gt;Lorem ipsum dolor sit amet, con tetur adipiscing elit agenean.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;home-testimonials&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;section-title text-center&quot;&gt;
+			&lt;h2 class=&quot;title-testimonials color-title&quot;&gt;DON�T TAKE OUR WORD&lt;/h2&gt;
+			&lt;h2 class=&quot;subtitle-testimonials title-2&quot;&gt;CLIENT TESTIMONIALS&lt;/h2&gt;
+			&lt;div class=&quot;spacer-50&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;col-md-4&quot;&gt;
+				&lt;blockquote&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget leo ac nisi porta consectetur. Duis sit amet ligula turpis. Suspendisse eget hendrerit justo. Suspendisse elementum eleifend arcu in consequat. Nullam imperdiet, mauris a consequat pharetra, quam quam malesuada nisi, non scelerisque.&lt;/blockquote&gt;
+				&lt;h4 class=&quot;client-name&quot;&gt;Calvin Sims&lt;/h4&gt;
+				&lt;p class=&quot;designation&quot;&gt;Marketing Head, ABC Chemicals&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-4&quot;&gt;
+				&lt;blockquote&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget leo ac nisi porta consectetur. Duis sit amet ligula turpis. Suspendisse eget hendrerit justo. Suspendisse elementum eleifend arcu in consequat. Nullam imperdiet, mauris a consequat pharetra, quam quam malesuada nisi, non scelerisque.&lt;/blockquote&gt;
+				&lt;h4 class=&quot;client-name&quot;&gt;Bertha Gonzales&lt;/h4&gt;
+				&lt;p class=&quot;designation&quot;&gt;Divisional Manager, Corpo Inc.&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-4&quot;&gt;
+				&lt;blockquote&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget leo ac nisi porta consectetur. Duis sit amet ligula turpis. Suspendisse eget hendrerit justo. Suspendisse elementum eleifend arcu in consequat. Nullam imperdiet, mauris a consequat pharetra, quam quam malesuada nisi, non scelerisque.&lt;/blockquote&gt;
+				&lt;h4 class=&quot;client-name&quot;&gt;Brianna Hernandez&lt;/h4&gt;
+				&lt;p class=&quot;designation&quot;&gt;Founder &amp;amp; CEO, Marine Engineering&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;home-publications&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;row publications&quot;&gt;
+			&lt;div class=&quot;col-md-7 col-sm-6&quot;&gt;
+				&lt;div class=&quot;panel-group&quot; id=&quot;accordion&quot;&gt;
+					&lt;div class=&quot;panel panel-default&quot;&gt;
+						&lt;div class=&quot;panel-heading&quot;&gt;
+							&lt;h4 class=&quot;panel-title&quot;&gt;
+								&lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseOne&quot;&gt;Petrolium Engineering&lt;/a&gt;
+							&lt;/h4&gt;
+						&lt;/div&gt;
+						&lt;div id=&quot;collapseOne&quot; class=&quot;panel-collapse collapse in&quot;&gt;
+							&lt;div class=&quot;panel-body&quot;&gt;
+								&lt;p&gt;Synergistically build professional communities vis-a-vis best-of-breed paradigms. Quickly empower world-class networks with prospective methodologies. Enthusiastically morph cross functional web-readiness via virtual niche markets. Synergistically enhance one-to-one partnerships after go forward metrics. Competently facilitate alternative networks for fully tested internal or &quot;organic&quot; sources. Synergistically disintermediate an expanded array of niche markets through value-added value. Dynamically communicate cost effective results after intuitive scenarios. Distinctively impact synergistic experiences.&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;panel panel-default&quot;&gt;
+						&lt;div class=&quot;panel-heading&quot;&gt;
+							&lt;h4 class=&quot;panel-title&quot;&gt;
+								&lt;a class=&quot;collapsed&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseTwo&quot;&gt;International Trade &lt;/a&gt;
+							&lt;/h4&gt;
+						&lt;/div&gt;
+						&lt;div id=&quot;collapseTwo&quot; class=&quot;panel-collapse collapse&quot;&gt;
+							&lt;div class=&quot;panel-body&quot;&gt;
+								&lt;p&gt;Synergistically build professional communities vis-a-vis best-of-breed paradigms. Quickly empower world-class networks with prospective methodologies. Enthusiastically morph cross functional web-readiness via virtual niche markets. Synergistically enhance one-to-one partnerships after go forward metrics. Competently facilitate alternative networks for fully tested internal or &quot;organic&quot; sources. Synergistically disintermediate an expanded array of niche markets through value-added value. Dynamically communicate cost effective results after intuitive scenarios. Distinctively impact synergistic experiences.&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;panel panel-default&quot;&gt;
+						&lt;div class=&quot;panel-heading&quot;&gt;
+							&lt;h4 class=&quot;panel-title&quot;&gt;
+								&lt;a class=&quot;collapsed&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseThree&quot;&gt;Chemicals and Refining &lt;/a&gt;
+							&lt;/h4&gt;
+						&lt;/div&gt;
+						&lt;div id=&quot;collapseThree&quot; class=&quot;panel-collapse collapse&quot;&gt;
+							&lt;div class=&quot;panel-body&quot;&gt;
+								&lt;p&gt;Synergistically build professional communities vis-a-vis best-of-breed paradigms. Quickly empower world-class networks with prospective methodologies. Enthusiastically morph cross functional web-readiness via virtual niche markets. Synergistically enhance one-to-one partnerships after go forward metrics. Competently facilitate alternative networks for fully tested internal or &quot;organic&quot; sources. Synergistically disintermediate an expanded array of niche markets through value-added value. Dynamically communicate cost effective results after intuitive scenarios. Distinctively impact synergistic experiences.&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-5 col-sm-6&quot;&gt;
+				&lt;div class=&quot;plubication-downloads&quot;&gt;
+					&lt;h2 class=&quot;publish&quot;&gt;Publications&lt;/h2&gt;
+					&lt;div class=&quot;download-file&quot;&gt;
+						&lt;a href=&quot;#&quot;&gt; &lt;i class=&quot;fa fa-file-pdf-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Download PDF &lt;span&gt;1.5 MB&lt;/span&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+					&lt;p class=&quot;download-title&quot;&gt;Other Downloads&lt;/p&gt;
+					&lt;ul class=&quot;download-list&quot;&gt;
+						&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Annual Report &lt;/a&gt; &lt;span&gt;2.4 MB&lt;/span&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Sustainability Report &lt;/a&gt; &lt;span&gt;150 KB&lt;/span&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Statistical Report &lt;/a&gt; &lt;span&gt;250 KB&lt;/span&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Energy Outlook &lt;/a&gt; &lt;span&gt;1.8 MB&lt;/span&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Chairman�s Message &lt;/a&gt; &lt;span&gt;550 KB&lt;/span&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;home-news&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;section-title text-center&quot;&gt;
+			&lt;h2 class=&quot;title-blog color-title&quot;&gt;NEWS AND MEDIA&lt;/h2&gt;
+			&lt;h2 class=&quot;subtitle-blog title-2&quot;&gt;LATEST FROM BLOG&lt;/h2&gt;
+			&lt;div class=&quot;spacer-50&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;row news&quot;&gt;
+			&lt;div class=&quot;col-md-4&quot;&gt;
+				&lt;div class=&quot;blog-img-box&quot;&gt;
+					&lt;div class=&quot;blog-date&quot;&gt;
+						&lt;span class=&quot;month&quot;&gt;MAR &lt;/span&gt; &lt;span class=&quot;date&quot;&gt; 06&lt;/span&gt;
+					&lt;/div&gt;
+					&lt;a class=&quot;hover-effect&quot; href=&quot;blog-single.html&quot;&gt; &lt;img src=&quot;/assets/images/news1.jpg&quot; alt=&quot;Fuel&quot; /&gt;
+					&lt;/a&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;blog-content&quot;&gt;
+					&lt;h3&gt;
+						&lt;a href=&quot;blog-single.html&quot;&gt; FUEL TRANSPORTATION AND RAILWAY RULES &lt;/a&gt;
+					&lt;/h3&gt;
+					&lt;p&gt;
+						By &lt;a href=&quot;#&quot;&gt;Eduardo Flores&lt;/a&gt; in Transportation
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-4&quot;&gt;
+				&lt;div class=&quot;blog-img-box&quot;&gt;
+					&lt;div class=&quot;blog-date&quot;&gt;
+						&lt;span class=&quot;month&quot;&gt;Feb &lt;/span&gt; &lt;span class=&quot;date&quot;&gt; 24&lt;/span&gt;
+					&lt;/div&gt;
+					&lt;a class=&quot;hover-effect&quot; href=&quot;blog-single.html&quot;&gt; &lt;img src=&quot;/assets/images/news2.jpg&quot; alt=&quot;Field Training&quot; /&gt;
+					&lt;/a&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;blog-content&quot;&gt;
+					&lt;h3&gt;
+						&lt;a href=&quot;blog-single.html&quot;&gt; FIELD TRAINING SESSIONS FOR NEW EMPLOYEES &lt;/a&gt;
+					&lt;/h3&gt;
+					&lt;p&gt;
+						By &lt;a href=&quot;#&quot;&gt;Clinton Chavez&lt;/a&gt; in TCareers
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-4&quot;&gt;
+				&lt;div class=&quot;blog-img-box&quot;&gt;
+					&lt;div class=&quot;blog-date&quot;&gt;
+						&lt;span class=&quot;month&quot;&gt;Jan &lt;/span&gt; &lt;span class=&quot;date&quot;&gt; 17&lt;/span&gt;
+					&lt;/div&gt;
+					&lt;a class=&quot;hover-effect&quot; href=&quot;blog-single.html&quot;&gt; &lt;img src=&quot;/assets/images/news3.jpg&quot; alt=&quot;Environment&quot; /&gt;
+					&lt;/a&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;blog-content&quot;&gt;
+					&lt;h3&gt;
+						&lt;a href=&quot;blog-single.html&quot;&gt; A STUDY ON SUSTAINABILITY &amp;amp; ENVIRONMENT FACTORS &lt;/a&gt;
+					&lt;/h3&gt;
+					&lt;p&gt;
+						By &lt;a href=&quot;#&quot;&gt;Gertrude Rose&lt;/a&gt; in Environment
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;blog-btn text-center&quot;&gt;
+			&lt;a href=&quot;blog.html&quot; class=&quot;btn btn-primary&quot; role=&quot;button&quot;&gt;READ THE BLOG&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;home-partners&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;section-title text-center&quot;&gt;
+			&lt;h2 class=&quot;subtitle-testimonials title-2&quot;&gt;OUR PARTNERS&lt;/h2&gt;
+			&lt;div class=&quot;spacer-20&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;row partners&quot;&gt;
+			&lt;div class=&quot;logo-slides slides owl-carousel&quot;&gt;
+				&lt;div class=&quot;item&quot;&gt;
+					&lt;div class=&quot;partner-images&quot;&gt;
+						&lt;img src=&quot;/assets/images/partner1.png&quot; alt=&quot;Partner Image 1&quot;&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;item&quot;&gt;
+					&lt;div class=&quot;partner-images&quot;&gt;
+						&lt;img src=&quot;/assets/images/partner2.png&quot; alt=&quot;Partner Image 1&quot;&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;item&quot;&gt;
+					&lt;div class=&quot;partner-images&quot;&gt;
+						&lt;img src=&quot;/assets/images/partner3.png&quot; alt=&quot;Partner Image 1&quot;&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;item&quot;&gt;
+					&lt;div class=&quot;partner-images&quot;&gt;
+						&lt;img src=&quot;/assets/images/partner4.png&quot; alt=&quot;Partner Image 1&quot;&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;item&quot;&gt;
+					&lt;div class=&quot;partner-images&quot;&gt;
+						&lt;img src=&quot;/assets/images/partner1.png&quot; alt=&quot;Partner Image 1&quot;&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;item&quot;&gt;
+					&lt;div class=&quot;partner-images&quot;&gt;
+						&lt;img src=&quot;/assets/images/partner2.png&quot; alt=&quot;Partner Image 1&quot;&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;item&quot;&gt;
+					&lt;div class=&quot;partner-images&quot;&gt;
+						&lt;img src=&quot;/assets/images/partner3.png&quot; alt=&quot;Partner Image 1&quot;&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;item&quot;&gt;
+					&lt;div class=&quot;partner-images&quot;&gt;
+						&lt;img src=&quot;/assets/images/partner4.png&quot; alt=&quot;Partner Image 1&quot;&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+&lt;/main&gt;
+
+ &lt;footer&gt;
+	&lt;div class=&quot;footer&quot;&gt;
+		&lt;div class=&quot;container&quot;&gt;
+
+			&lt;div class=&quot;row pre-footer&quot;&gt;
+				&lt;div class=&quot;col-md-4&quot;&gt;
+					&lt;div class=&quot;contact-box&quot;&gt;
+						&lt;i class=&quot;fa fa-map-marker&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+						&lt;div class=&quot;contact-details&quot;&gt;
+							&lt;h4 class=&quot;pre-footer-title&quot;&gt;HEAD OFFICE&lt;/h4&gt;
+							&lt;p&gt;
+								PO Box 16122, Collins Street West, &lt;br&gt; Victoria 8007 Australia
+							&lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;col-md-4&quot;&gt;
+					&lt;div class=&quot;contact-box&quot;&gt;
+						&lt;i class=&quot;fa fa-phone&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+						&lt;div class=&quot;contact-details&quot;&gt;
+							&lt;h4 class=&quot;pre-footer-title&quot;&gt;CALL US&lt;/h4&gt;
+							&lt;p&gt;
+								SUPPORT: 1800 425 4646 &lt;br&gt; OFFICE: +1 (253) 2587 220
+							&lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;col-md-4&quot;&gt;
+					&lt;div class=&quot;contact-box&quot;&gt;
+						&lt;i class=&quot;fa fa-envelope&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+						&lt;div class=&quot;contact-details&quot;&gt;
+							&lt;h4 class=&quot;pre-footer-title&quot;&gt;EMAIL US&lt;/h4&gt;
+							&lt;p&gt;
+								&lt;a class=&quot;__cf_email__&quot; href=&quot;/cdn-cgi/l/email-protection&quot; data-cfemail=&quot;731b161f1f1c331c1515001b1c01161a1d17060007010a5d101c1e&quot;&gt;[email&amp;#160;protected]&lt;/a&gt;
+								&lt;script data-cfhash=&apos;f9e31&apos; type=&quot;text/javascript&quot;&gt;
+									/* &lt;![CDATA[ */!function(t, e, r, n, c, a,
+											p) {
+										try {
+											t = document.currentScript
+													|| function() {
+														for (
+																t = document
+																		.getElementsByTagName(&apos;script&apos;),
+																e = t.length; e--;)
+															if (t[e]
+																	.getAttribute(&apos;data-cfhash&apos;))
+																return t[e]
+													}();
+											if (t &amp;&amp; (c = t.previousSibling)) {
+												p = t.parentNode;
+												if (a = c
+														.getAttribute(&apos;data-cfemail&apos;)) {
+													for (e = &apos;&apos;, r = &apos;0x&apos;
+															+ a.substr(0, 2)
+															| 0, n = 2; a.length
+															- n; n += 2)
+														e += &apos;%&apos;
+																+ (&apos;0&apos; + (&apos;0x&apos;
+																		+ a
+																				.substr(
+																						n,
+																						2) ^ r)
+																		.toString(16))
+																		.slice(-2);
+													p
+															.replaceChild(
+																	document
+																			.createTextNode(decodeURIComponent(e)),
+																	c)
+												}
+												p.removeChild(t)
+											}
+										} catch (u) {
+										}
+									}()/* ]]&gt; */
+								&lt;/script&gt;
+								&lt;br&gt; &lt;a class=&quot;__cf_email__&quot; href=&quot;/cdn-cgi/l/email-protection&quot; data-cfemail=&quot;146775787167547b7272677c7b66717d7a70616760666d3a777b79&quot;&gt;[email&amp;#160;protected]&lt;/a&gt;
+								&lt;script data-cfhash=&apos;f9e31&apos; type=&quot;text/javascript&quot;&gt;
+									/* &lt;![CDATA[ */
+									!function(t, e, r, n, c, a, p) {
+										try {
+											t = document.currentScript
+													|| function() {
+														for (
+																t = document
+																		.getElementsByTagName(&apos;script&apos;),
+																e = t.length; e--;)
+															if (t[e]
+																	.getAttribute(&apos;data-cfhash&apos;))
+																return t[e]
+													}();
+											if (t &amp;&amp; (c = t.previousSibling)) {
+												p = t.parentNode;
+												if (a = c
+														.getAttribute(&apos;data-cfemail&apos;)) {
+													for (e = &apos;&apos;, r = &apos;0x&apos;
+															+ a.substr(0, 2)
+															| 0, n = 2; a.length
+															- n; n += 2)
+														e += &apos;%&apos;
+																+ (&apos;0&apos; + (&apos;0x&apos;
+																		+ a
+																				.substr(
+																						n,
+																						2) ^ r)
+																		.toString(16))
+																		.slice(-2);
+													p
+															.replaceChild(
+																	document
+																			.createTextNode(decodeURIComponent(e)),
+																	c)
+												}
+												p.removeChild(t)
+											}
+										} catch (u) {
+										}
+									}()/* ]]&gt; */
+								&lt;/script&gt;
+							&lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+
+
+			&lt;div class=&quot;row widgets&quot;&gt;
+				&lt;div class=&quot;col-md-4 col-sm-6&quot;&gt;
+					&lt;div class=&quot;about-txt widget&quot;&gt;
+						&lt;img src=&quot;images/footer-logo.png&quot; alt=&quot;logo&quot; /&gt;
+						&lt;p&gt;Collaboratively deliver partnerships progressive alignments. Assertively premier supply chains before emerging solutions. Monetize high-payoff action items before wireless internal or &quot;organic&quot; sources exceptional action items.&lt;/p&gt;
+						&lt;div class=&quot;widgets-social&quot;&gt;
+							&lt;a href=&quot;#&quot;&gt; &lt;i class=&quot;fa fa-facebook&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+							&lt;/a&gt; &lt;a href=&quot;#&quot;&gt; &lt;i class=&quot;fa fa-twitter&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; &lt;a href=&quot;#&quot;&gt; &lt;i class=&quot;fa fa-linkedin&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; &lt;a href=&quot;#&quot;&gt; &lt;i class=&quot;fa fa-instagram&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;col-md-2 col-sm-6&quot;&gt;
+					&lt;div class=&quot;quick-links widget&quot;&gt;
+						&lt;h2 class=&quot;widget-title&quot;&gt;QUICK LINKS&lt;/h2&gt;
+						&lt;ul&gt;
+							&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Careers &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Contact &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Market Info &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Technology &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Latest News &lt;/a&gt;&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;spacer-50 visible-sm&quot;&gt;&lt;/div&gt;
+				&lt;div class=&quot;col-md-3 col-sm-6&quot;&gt;
+					&lt;div class=&quot;our-services widget&quot;&gt;
+						&lt;h2 class=&quot;widget-title&quot;&gt;OUR SERVICES&lt;/h2&gt;
+						&lt;ul&gt;
+							&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Chemicals &amp;amp; Commercial Fuels &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Aviation Fuels &amp;amp; Marine Fuels &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Lubricants Services &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Liquified Petrolium Gas &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Shell Sulphur, Trading &amp;amp; Supply &lt;/a&gt;&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;col-md-3 col-sm-6&quot;&gt;
+					&lt;div class=&quot;newsletter widget&quot;&gt;
+						&lt;h2 class=&quot;widget-title&quot;&gt;Newsletter&lt;/h2&gt;
+						&lt;p&gt;Subscribe to our newsletters to receive latest news and updates.&lt;/p&gt;
+
+						&lt;form action=&quot;php/subscribe.php&quot; id=&quot;subscribeform&quot; method=&quot;post&quot;&gt;
+							&lt;div class=&quot;form-group&quot;&gt;
+								&lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; placeholder=&quot;Enter your email&quot; class=&quot;form-control&quot; title=&quot;Please enter your email&quot; data-msg-email=&quot;Please enter a valid email&quot;&gt;
+							&lt;/div&gt;
+							&lt;button type=&quot;submit&quot; class=&quot;btn btn-block&quot; id=&quot;js-subscribe-btn&quot;&gt;Subscribe Now!&lt;/button&gt;
+							&lt;div id=&quot;js-subscribe-result&quot; data-success-msg=&quot;Done. Subscribed&quot; data-error-msg=&quot;Oops. Error!&quot;&gt;&lt;/div&gt;
+						&lt;/form&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;copyright&quot;&gt;
+		&lt;div class=&quot;container&quot;&gt;
+			&lt;div class=&quot;row copyright-bar&quot;&gt;
+				&lt;div class=&quot;col-md-6&quot;&gt;
+					&lt;p&gt;Copyright � 2016 Offshore Industries. All rights reserved.&lt;/p&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;col-md-6 text-right&quot;&gt;
+					&lt;p&gt;
+						&lt;a href=&quot;#&quot;&gt; Terms of use&lt;/a&gt; &lt;a href=&quot;#&quot;&gt;Privacy Policy&lt;/a&gt; &lt;span&gt; | &lt;/span&gt; Made with &lt;i class=&quot;fa fa-heart&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; by Surjith S M
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+&lt;/footer&gt;
+
+
+
+	&lt;/div&gt;
+	&lt;!-- /container --&gt;
+	&lt;script type=&quot;text/javascript&quot; src=&quot;/assets/webjars/jquery/2.1.3/jquery.js&quot;&gt;&lt;/script&gt;
+	&lt;script type=&quot;text/javascript&quot; src=&quot;/assets/webjars/bootstrap/3.3.4/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+	&lt;a href=&quot;#0&quot; class=&quot;cd-top&quot;&gt; Top &lt;/a&gt;
+	&lt;/div&gt;
+
+
+
+	&lt;script src=&quot;/assets/js/jquery.min.js&quot;&gt;&lt;/script&gt;
+
+	&lt;script src=&quot;/assets/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+
+	&lt;script src=&quot;/assets/js/jquery.flexslider-min.js&quot;&gt;&lt;/script&gt;
+
+	&lt;script src=&quot;/assets/js/owl.carousel.min.js&quot;&gt;&lt;/script&gt;
+
+	&lt;script src=&quot;/assets/js/waypoints.min.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;/assets/js/jquery.counterup.min.js&quot;&gt;&lt;/script&gt;
+
+	&lt;script src=&quot;/assets/js/back-to-top.js&quot;&gt;&lt;/script&gt;
+
+	&lt;script src=&quot;/assets/js/validate.js&quot;&gt;&lt;/script&gt;
+
+	&lt;script src=&quot;/assets/js/subscribe.js&quot;&gt;&lt;/script&gt;
+
+	&lt;script src=&quot;/assets/js/main.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: a string containing &quot;Hello World!&quot;
+     but: was &quot; &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+&lt;meta name=&quot;description&quot; content=&quot;Offshore - Responsive HTML Template&quot;&gt;
+&lt;meta name=&quot;author&quot; content=&quot;Surjith S.M&quot;&gt;
+
+&lt;title&gt;Offshore - Responsive Gas &amp;amp; Oil Industry HTML Template&lt;/title&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+//&lt;![CDATA[
+//try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:&quot;cf&quot;,bag2:1,mirage2:0,oracle:0,paths:{cloudflare:&quot;/cdn-cgi/nexp/dok3v=1613a3a185/&quot;},atok:&quot;ff3e4d811accaba3ee63fc247195442c&quot;,petok:&quot;0a989fe228f31d8cb137fa6c8d0c0c8431bdf7c6-1476521987-3600&quot;,zone:&quot;web3canvas.com&quot;,rocket:&quot;0&quot;,apps:{&quot;abetterbrowser&quot;:{&quot;ie&quot;:&quot;7&quot;,&quot;opera&quot;:null,&quot;chrome&quot;:null,&quot;safari&quot;:null,&quot;firefox&quot;:null},&quot;ga_key&quot;:{&quot;ua&quot;:&quot;UA-38030533-1&quot;,&quot;ga_bs&quot;:&quot;2&quot;}}}];!function(a,b){a=document.createElement(&quot;script&quot;),b=document.getElementsByTagName(&quot;script&quot;)[0],a.async=!0,a.src=&quot;//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=088620b277/cloudflare.min.js&quot;,b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]&gt;
+&lt;/script&gt;
+&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;/assets/images/favicon.png&quot;&gt;
+
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+
+&lt;link href=&quot;/assets/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/fonts/font-awesome/css/font-awesome.min.css&quot;&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/flexslider.css&quot;&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/owl.carousel.min.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/owl.theme.min.css&quot;&gt;
+
+&lt;link href=&quot;/assets/css/style.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+/* &lt;![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push([&apos;_setAccount&apos;, &apos;UA-38030533-1&apos;]);
+_gaq.push([&apos;_trackPageview&apos;]);
+
+(function() {
+var ga = document.createElement(&apos;script&apos;); ga.type = &apos;text/javascript&apos;; ga.async = true;
+ga.src = (&apos;https:&apos; == document.location.protocol ? &apos;https://ssl&apos; : &apos;http://www&apos;) + &apos;.google-analytics.com/ga.js&apos;;
+var s = document.getElementsByTagName(&apos;script&apos;)[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+(function(b){(function(a){&quot;__CF&quot;in b&amp;&amp;&quot;DJS&quot;in b.__CF?b.__CF.DJS.push(a):&quot;addEventListener&quot;in b?b.addEventListener(&quot;load&quot;,a,!1):b.attachEvent(&quot;onload&quot;,a)})(function(){&quot;FB&quot;in b&amp;&amp;&quot;Event&quot;in FB&amp;&amp;&quot;subscribe&quot;in FB.Event&amp;&amp;(FB.Event.subscribe(&quot;edge.create&quot;,function(a){_gaq.push([&quot;_trackSocial&quot;,&quot;facebook&quot;,&quot;like&quot;,a])}),FB.Event.subscribe(&quot;edge.remove&quot;,function(a){_gaq.push([&quot;_trackSocial&quot;,&quot;facebook&quot;,&quot;unlike&quot;,a])}),FB.Event.subscribe(&quot;message.send&quot;,function(a){_gaq.push([&quot;_trackSocial&quot;,&quot;facebook&quot;,&quot;send&quot;,a])}));&quot;twttr&quot;in b&amp;&amp;&quot;events&quot;in twttr&amp;&amp;&quot;bind&quot;in twttr.events&amp;&amp;twttr.events.bind(&quot;tweet&quot;,function(a){if(a){var b;if(a.target&amp;&amp;a.target.nodeName==&quot;IFRAME&quot;)a:{if(a=a.target.src){a=a.split(&quot;#&quot;)[0].match(/[^?=&amp;]+=([^&amp;]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf(&quot;url&quot;)===0){b=unescape(c.split(&quot;=&quot;)[1]);break a}}b=void 0}_gaq.push([&quot;_trackSocial&quot;,&quot;twitter&quot;,&quot;tweet&quot;,b])}})})})(window);
+/* ]]&gt; */
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body class=&quot;homepage&quot;&gt;
+	&lt;div class=&quot;loader-wrapper&quot;&gt;
+		&lt;div class=&quot;sk-cube-grid&quot;&gt;
+			&lt;div class=&quot;sk-cube sk-cube1&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;sk-cube sk-cube2&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;sk-cube sk-cube3&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;sk-cube sk-cube4&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;sk-cube sk-cube5&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;sk-cube sk-cube6&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;sk-cube sk-cube7&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;sk-cube sk-cube8&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;sk-cube sk-cube9&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;wrapper&quot;&gt;
+
+		&lt;header&gt;
+	&lt;div class=&quot;header-area&quot;&gt;
+
+		&lt;div class=&quot;row logo-top-info&quot;&gt;
+			&lt;div class=&quot;container&quot;&gt;
+				&lt;div class=&quot;col-md-3 logo&quot;&gt;
+
+					&lt;a href=&quot;index.html&quot;&gt;&lt;img src=&quot;/assets/images/logo.png&quot; alt=&quot;Offshore Logo&quot; /&gt;&lt;/a&gt;
+
+					&lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbar&quot;&gt;
+						&lt;span class=&quot;sr-only&quot;&gt; Main Menu &lt;/span&gt; &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt; &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt; &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+					&lt;/button&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;col-md-9 top-info-social&quot;&gt;
+					&lt;div class=&quot;pull-right&quot;&gt;
+						&lt;div class=&quot;top-info&quot;&gt;
+							&lt;div class=&quot;call&quot;&gt;
+								&lt;h3&gt;CALL US&lt;/h3&gt;
+								&lt;p&gt;1800 425 4646&lt;/p&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;email&quot;&gt;
+								&lt;h3&gt;EMAIL US&lt;/h3&gt;
+								&lt;p&gt;
+									&lt;a class=&quot;__cf_email__&quot; href=&quot;/cdn-cgi/l/email-protection&quot; data-cfemail=&quot;7a13141c153a151c1c091215081f1314090f090e080354191517&quot;&gt;[email&amp;#160;protected]&lt;/a&gt;
+									&lt;script data-cfhash=&apos;f9e31&apos; type=&quot;text/javascript&quot;&gt;
+										/* &lt;![CDATA[ */!function(t, e, r, n,
+												c, a, p) {
+											try {
+												t = document.currentScript
+														|| function() {
+															for (
+																	t = document
+																			.getElementsByTagName(&apos;script&apos;),
+																	e = t.length; e--;)
+																if (t[e]
+																		.getAttribute(&apos;data-cfhash&apos;))
+																	return t[e]
+														}();
+												if (t
+														&amp;&amp; (c = t.previousSibling)) {
+													p = t.parentNode;
+													if (a = c
+															.getAttribute(&apos;data-cfemail&apos;)) {
+														for (
+																e = &apos;&apos;,
+																r = &apos;0x&apos;
+																		+ a
+																				.substr(
+																						0,
+																						2)
+																		| 0,
+																n = 2; a.length
+																- n; n += 2)
+															e += &apos;%&apos;
+																	+ (&apos;0&apos; + (&apos;0x&apos;
+																			+ a
+																					.substr(
+																							n,
+																							2) ^ r)
+																			.toString(16))
+																			.slice(-2);
+														p
+																.replaceChild(
+																		document
+																				.createTextNode(decodeURIComponent(e)),
+																		c)
+													}
+													p.removeChild(t)
+												}
+											} catch (u) {
+											}
+										}()/* ]]&gt; */
+									&lt;/script&gt;
+								&lt;/p&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;market&quot;&gt;
+								&lt;h3&gt;MARKET&lt;/h3&gt;
+								&lt;p&gt;
+									256.78 &lt;span class=&quot;forex&quot;&gt; &lt;i class=&quot;fa fa-caret-up&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; + 4.26
+									&lt;/span&gt;
+								&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class=&quot;social&quot;&gt;
+							&lt;ul class=&quot;social-icons&quot;&gt;
+								&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;nav id=&quot;navbar&quot; class=&quot;collapse navbar-collapse main-menu&quot;&gt;
+			&lt;div class=&quot;container&quot;&gt;
+				&lt;ul class=&quot;main-menu&quot;&gt;
+					&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;index.html&quot;&gt; Home &lt;/a&gt;&lt;/li&gt;
+					&lt;li class=&quot;dropdown&quot;&gt;&lt;a href=&quot;#&quot; data-toggle=&quot;dropdown&quot;&gt; About &lt;i class=&quot;fa fa-chevron-down dropdown-toggle&quot;&gt; &lt;/i&gt;
+					&lt;/a&gt;
+						&lt;ul&gt;
+							&lt;li&gt;&lt;a href=&quot;about.html&quot;&gt; The Company &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;mission.html&quot;&gt; Vision &amp;amp; Mission &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;approach.html&quot;&gt; Our Approach &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;leaders.html&quot;&gt; Our Team &lt;/a&gt;&lt;/li&gt;
+						&lt;/ul&gt;&lt;/li&gt;
+					&lt;li class=&quot;dropdown&quot;&gt;&lt;a href=&quot;#&quot; data-toggle=&quot;dropdown&quot;&gt; Services &lt;i class=&quot;fa fa-chevron-down dropdown-toggle&quot;&gt; &lt;/i&gt;
+					&lt;/a&gt;
+						&lt;ul&gt;
+							&lt;li&gt;&lt;a href=&quot;services.html&quot;&gt; Services List &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;services-list.html&quot;&gt; Services List Fullwidth &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;services-single.html&quot;&gt; Services Single &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;services-full-width.html&quot;&gt; Services Full Width &lt;/a&gt;&lt;/li&gt;
+						&lt;/ul&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;technology.html&quot;&gt; Technology &lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;blog.html&quot;&gt; News &amp;amp; Media &lt;/a&gt;&lt;/li&gt;
+					&lt;li class=&quot;dropdown&quot;&gt;&lt;a href=&quot;#&quot; data-toggle=&quot;dropdown&quot;&gt; Pages &lt;i class=&quot;fa fa-chevron-down dropdown-toggle&quot;&gt; &lt;/i&gt;
+					&lt;/a&gt;
+						&lt;ul&gt;
+							&lt;li&gt;&lt;a href=&quot;blog.html&quot;&gt; Blog &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;blog-single.html&quot;&gt; Blog Single &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;careers-single.html&quot;&gt; Careers Single &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;shortcodes.html&quot;&gt; Shortcodes &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;404.html&quot;&gt; 404 page &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;blank-page.html&quot;&gt; Blank Page &lt;/a&gt;&lt;/li&gt;
+						&lt;/ul&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;careers.html&quot;&gt; CAREERS &lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;contact.html&quot;&gt; CONTACT &lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/nav&gt;
+	&lt;/div&gt;
+&lt;/header&gt;   
+
+
+&lt;!DOCTYPE html&gt;
+
+&lt;main class=&quot;main&quot;&gt;
+&lt;section class=&quot;home-slider&quot;&gt;
+	&lt;div class=&quot;flexslider&quot;&gt;
+		&lt;ul class=&quot;slides&quot;&gt;
+			&lt;li class=&quot;has-overlay&quot;&gt;&lt;img src=&quot;/assets/images/slider1.jpg&quot; alt=&quot;Slider 1&quot; /&gt;
+				&lt;div class=&quot;slider-content&quot;&gt;
+					&lt;div class=&quot;container&quot;&gt;
+						&lt;h2&gt;
+							Targeting high impact exploration &lt;br&gt; Offshore Industry
+						&lt;/h2&gt;
+						&lt;p&gt;
+							Holisticly brand sustainable solutions rather than clicks-and-mortar applications. &lt;br&gt; Phosfluorescently whiteboard fully tested initiatives.
+						&lt;/p&gt;
+						&lt;a class=&quot;btn primary-btn&quot;&gt; KNOW MORE &lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;&lt;/li&gt;
+			&lt;li class=&quot;has-overlay&quot;&gt;&lt;img src=&quot;/assets/images/slider2.jpg&quot; alt=&quot;Slider 2&quot; /&gt;
+				&lt;div class=&quot;slider-content text-center&quot;&gt;
+					&lt;div class=&quot;container&quot;&gt;
+						&lt;h2&gt;Most sophisticated Storage &amp;amp; Transport&lt;/h2&gt;
+						&lt;p&gt;
+							Quickly disintermediate collaborative web services via high standards in products. &lt;br&gt; Compellingly fabricate cutting-edge portals through alternative &lt;br&gt; opportunities. Objectively customize.
+						&lt;/p&gt;
+						&lt;a class=&quot;btn primary-btn&quot;&gt; KNOW MORE &lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;home-company&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;row company&quot;&gt;
+			&lt;div class=&quot;col-md-5 col-sm-8&quot;&gt;
+				&lt;div class=&quot;company-details&quot;&gt;
+					&lt;h2 class=&quot;company-title color-title&quot;&gt;THE COMPANY&lt;/h2&gt;
+					&lt;h4 class=&quot;company-subtitle subtitle&quot;&gt;Interactively empower diverse imperatives after prospective convergence.&lt;/h4&gt;
+					&lt;p&gt;Assertively productize efficient partnerships through customer directed supply chains. Continually maintain process-centric catalysts for change via backward compatible value.&lt;/p&gt;
+					&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot; role=&quot;button&quot;&gt; READ OUR MISSION &lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-7 col-sm-12&quot;&gt;
+				&lt;div class=&quot;company-image&quot;&gt;
+					&lt;div class=&quot;img-left hover-effect&quot;&gt;
+						&lt;img src=&quot;/assets/images/company-image2.jpg&quot; alt=&quot;Company Image&quot; /&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;img-right hover-effect&quot;&gt;
+						&lt;img src=&quot;/assets/images/company-image1.jpg&quot; alt=&quot;Company Image&quot; /&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;home-ceo&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;row ceo&quot;&gt;
+			&lt;div class=&quot;col-md-6&quot;&gt;
+				&lt;div class=&quot;ceo-photo&quot;&gt;
+					&lt;img src=&quot;/assets/images/ceo.png&quot; alt=&quot;CEO&quot; /&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-6&quot;&gt;
+				&lt;div class=&quot;ceo-details&quot;&gt;
+					&lt;h2 class=&quot;ceo-title color-title&quot;&gt;WORD FROM CEO&lt;/h2&gt;
+					&lt;h4 class=&quot;ceo-subtitle subtitle&quot;&gt;READ THE MESSAGE FROM OUR CEO&lt;/h4&gt;
+					&lt;p&gt;Proactively incubate enterprise total linkage without sustainable leadership skills. Monotonectally strategize user-centric interfaces whereas low-risk high-yield materials. Efficiently syndicate web-enabled portals for principle centered partnerships.&lt;/p&gt;
+					&lt;p&gt;Proactively whiteboard revolutionary processes after scalable testing procedures. Holisticly reinvent seamless after business.&lt;/p&gt;
+					&lt;h4 class=&quot;ceo-sign&quot;&gt;
+						&lt;img src=&quot;/assets/images/ceo-sign.png&quot; alt=&quot;signature&quot; /&gt;
+					&lt;/h4&gt;
+					&lt;p class=&quot;ceo-name&quot;&gt;Gregory Walker, CEO&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;home-services&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;row services&quot;&gt;
+			&lt;div class=&quot;col-md-4&quot;&gt;
+				&lt;div class=&quot;hover-effect&quot;&gt;
+					&lt;img src=&quot;/assets/images/services-one.jpg&quot; alt=&quot;technology-innovation&quot; /&gt;
+				&lt;/div&gt;
+				&lt;h4 class=&quot;services-title-one subtitle&quot;&gt;TECHNOLOGY &amp;amp; INNOVATION&lt;/h4&gt;
+				&lt;p&gt;Professionally drive clicks-and-mortar web readiness after progressive e-commerce. Dramatically unleash cross functional.&lt;/p&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn btn-default btn-normal&quot;&gt;Read More&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-4&quot;&gt;
+				&lt;div class=&quot;hover-effect&quot;&gt;
+					&lt;img src=&quot;/assets/images/services-two.jpg&quot; alt=&quot;our-operations&quot; /&gt;
+				&lt;/div&gt;
+				&lt;h4 class=&quot;services-title-one subtitle&quot;&gt;OUR OPERATIONS&lt;/h4&gt;
+				&lt;p&gt;Energistically productize wireless mindshare for emerging experiences. Myocardinate enabled alignments and magnetic scenarios.&lt;/p&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn btn-default btn-normal&quot;&gt;Read More&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-4&quot;&gt;
+				&lt;div class=&quot;hover-effect&quot;&gt;
+					&lt;img src=&quot;/assets/images/services-three.jpg&quot; alt=&quot;social-resposibility&quot; /&gt;
+				&lt;/div&gt;
+				&lt;h4 class=&quot;services-title-one subtitle&quot;&gt;SOCIAL RESPONIBILITY&lt;/h4&gt;
+				&lt;p&gt;Globally incubate principle-centered e-markets with standards compliant catalysts for change. Efficiently extend highly efficient products.&lt;/p&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn btn-default btn-normal&quot;&gt;Read More&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;home-links&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;row links&quot;&gt;
+			&lt;div class=&quot;col-md-2&quot;&gt;
+				&lt;h4 class=&quot;links-title subtitle&quot;&gt;Quick Links&lt;/h4&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-2&quot;&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot; role=&quot;button&quot;&gt;CAREERS&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-2&quot;&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot; role=&quot;button&quot;&gt;CONTACT&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-2&quot;&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot; role=&quot;button&quot;&gt;MARKET INFO&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-2&quot;&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot; role=&quot;button&quot;&gt;TECHNOLOGY&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-2&quot;&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot; role=&quot;button&quot;&gt;LATEST NEWS&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;home-process&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;row process&quot;&gt;
+			&lt;div class=&quot;col-sm-6&quot;&gt;
+				&lt;h2 class=&quot;process-title title-2&quot;&gt;OUR PROCESS&lt;/h2&gt;
+				&lt;h4 class=&quot;process-subtitle subtitle-2&quot;&gt;Interactively empower diverse imperatives after prospective convergence.&lt;/h4&gt;
+				&lt;p&gt;Interactively fashion functional action items after 24/365 results. Dynamically redefine world-class metrics without leading-edge markets. Progressively orchestrate enabled &quot;outside the box&quot; thinking via scalable quality vectors. Objectively unleash optimal core competencies.&lt;/p&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot; role=&quot;button&quot;&gt;READ THE STORY&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-6&quot;&gt;
+				&lt;div id=&quot;skills&quot; class=&quot;process-bar&quot;&gt;
+					&lt;div class=&quot;skillbar-title&quot;&gt;FEUL AND MISCELLANEOUS&lt;/div&gt;
+					&lt;div class=&quot;skillbar&quot; data-percent=&quot;46%&quot;&gt;
+						&lt;div class=&quot;skillbar-bar&quot;&gt;&lt;/div&gt;
+						&lt;div class=&quot;skill-bar-percent&quot;&gt;46%&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;skillbar-title&quot;&gt;LIQUID CHEMICALS&lt;/div&gt;
+					&lt;div class=&quot;skillbar&quot; data-percent=&quot;78%&quot;&gt;
+						&lt;div class=&quot;skillbar-bar&quot;&gt;&lt;/div&gt;
+						&lt;div class=&quot;skill-bar-percent&quot;&gt;78%&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;skillbar-title&quot;&gt;MONOMERS / POLYMERS&lt;/div&gt;
+					&lt;div class=&quot;skillbar&quot; data-percent=&quot;70%&quot;&gt;
+						&lt;div class=&quot;skillbar-bar&quot;&gt;&lt;/div&gt;
+						&lt;div class=&quot;skill-bar-percent&quot;&gt;70%&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;skillbar-title&quot;&gt;ISOCYANATE&lt;/div&gt;
+					&lt;div class=&quot;skillbar&quot; data-percent=&quot;80%&quot;&gt;
+						&lt;div class=&quot;skillbar-bar&quot;&gt;&lt;/div&gt;
+						&lt;div class=&quot;skill-bar-percent&quot;&gt;80%&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;home-stats&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;row stats&quot;&gt;
+			&lt;div class=&quot;col-md-3 col-xs-6&quot;&gt;
+				&lt;img src=&quot;/assets/images/globe.png&quot; alt=&quot;&quot; /&gt;
+				&lt;div class=&quot;stats-info&quot;&gt;
+					&lt;h4 class=&quot;counter&quot;&gt;26&lt;/h4&gt;
+					&lt;p&gt;Offices Worldwide&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-3 col-xs-6&quot;&gt;
+				&lt;img src=&quot;/assets/images/friends.png&quot; alt=&quot;&quot; /&gt;
+				&lt;div class=&quot;stats-info&quot;&gt;
+					&lt;h4 class=&quot;counter&quot;&gt;10000&lt;/h4&gt;
+					&lt;p&gt;Satisfied Employees&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-3 col-xs-6&quot;&gt;
+				&lt;img src=&quot;/assets/images/fire.png&quot; alt=&quot;&quot; /&gt;
+				&lt;div class=&quot;stats-info&quot;&gt;
+					&lt;h4 class=&quot;counter&quot;&gt;126&lt;/h4&gt;
+					&lt;p&gt;Refineries &amp;amp; Operations&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-3 col-xs-6&quot;&gt;
+				&lt;img src=&quot;/assets/images/badge.png&quot; alt=&quot;&quot; /&gt;
+				&lt;div class=&quot;stats-info&quot;&gt;
+					&lt;h4 class=&quot;counter&quot;&gt;35&lt;/h4&gt;
+					&lt;p&gt;Awards &amp;amp; Recognitions&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;home-services-other&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;section-title text-center&quot;&gt;
+			&lt;h2 class=&quot;title-services-other title-2&quot;&gt;SERVICES&lt;/h2&gt;
+			&lt;h4 class=&quot;subtitle-services-other subtitle-2&quot;&gt;
+				Objectively whiteboard transparent models for prospective &lt;br /&gt; information. Authoritatively myocardinate.
+			&lt;/h4&gt;
+			&lt;div class=&quot;spacer-50&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;row services-other&quot;&gt;
+			&lt;div class=&quot;col-sm-4&quot;&gt;
+				&lt;div class=&quot;img-box&quot;&gt;
+					&lt;img src=&quot;/assets/images/service-icon1.png&quot; alt=&quot;SHELL CHEMICALS&quot; /&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;services-info&quot;&gt;
+					&lt;h4 class=&quot;services-title-one subtitle&quot;&gt;SHELL CHEMICALS&lt;/h4&gt;
+					&lt;p&gt;Lorem ipsum dolor sit amet, con tetur adipiscing elit agenean.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-4&quot;&gt;
+				&lt;div class=&quot;img-box&quot;&gt;
+					&lt;img src=&quot;/assets/images/service-icon2.png&quot; alt=&quot;COMMERCIAL FUELS&quot; /&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;services-info&quot;&gt;
+					&lt;h4 class=&quot;services-title-one subtitle&quot;&gt;COMMERCIAL FUELS&lt;/h4&gt;
+					&lt;p&gt;Lorem ipsum dolor sit amet, con tetur adipiscing elit agenean.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-4&quot;&gt;
+				&lt;div class=&quot;img-box&quot;&gt;
+					&lt;img src=&quot;/assets/images/service-icon3.png&quot; alt=&quot;AVIATION FUELS&quot; /&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;services-info&quot;&gt;
+					&lt;h4 class=&quot;services-title-one subtitle&quot;&gt;AVIATION FUELS&lt;/h4&gt;
+					&lt;p&gt;Lorem ipsum dolor sit amet, con tetur adipiscing elit agenean.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;clearfix spacer-70&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;col-sm-4&quot;&gt;
+				&lt;div class=&quot;img-box&quot;&gt;
+					&lt;img src=&quot;/assets/images/service-icon4.png&quot; alt=&quot;LUBRICANTS&quot; /&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;services-info&quot;&gt;
+					&lt;h4 class=&quot;services-title-one subtitle&quot;&gt;LUBRICANTS&lt;/h4&gt;
+					&lt;p&gt;Lorem ipsum dolor sit amet, con tetur adipiscing elit agenean.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-4&quot;&gt;
+				&lt;div class=&quot;img-box&quot;&gt;
+					&lt;img src=&quot;/assets/images/service-icon5.png&quot; alt=&quot;MARINE FUELS&quot; /&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;services-info&quot;&gt;
+					&lt;h4 class=&quot;services-title-one subtitle&quot;&gt;MARINE FUELS&lt;/h4&gt;
+					&lt;p&gt;Lorem ipsum dolor sit amet, con tetur adipiscing elit agenean.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-4&quot;&gt;
+				&lt;div class=&quot;img-box&quot;&gt;
+					&lt;img src=&quot;/assets/images/service-icon6.png&quot; alt=&quot;LIQUIFIED PETROLIUM GAS&quot; /&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;services-info&quot;&gt;
+					&lt;h4 class=&quot;services-title-one subtitle&quot;&gt;LIQUIFIED PETROLIUM GAS&lt;/h4&gt;
+					&lt;p&gt;Lorem ipsum dolor sit amet, con tetur adipiscing elit agenean.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;clearfix spacer-70&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;col-sm-4&quot;&gt;
+				&lt;div class=&quot;img-box&quot;&gt;
+					&lt;img src=&quot;/assets/images/service-icon7.png&quot; alt=&quot;SHELL SULPHUR&quot; /&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;services-info&quot;&gt;
+					&lt;h4 class=&quot;services-title-one subtitle&quot;&gt;SHELL SULPHUR&lt;/h4&gt;
+					&lt;p&gt;Lorem ipsum dolor sit amet, con tetur adipiscing elit agenean.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-4&quot;&gt;
+				&lt;div class=&quot;img-box&quot;&gt;
+					&lt;img src=&quot;/assets/images/service-icon8.png&quot; alt=&quot;SHELL TRADING&quot; /&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;services-info&quot;&gt;
+					&lt;h4 class=&quot;services-title-one subtitle&quot;&gt;SHELL TRADING&lt;/h4&gt;
+					&lt;p&gt;Lorem ipsum dolor sit amet, con tetur adipiscing elit agenean.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-4&quot;&gt;
+				&lt;div class=&quot;img-box&quot;&gt;
+					&lt;img src=&quot;/assets/images/service-icon9.png&quot; alt=&quot;SHELL FOR SUPPLIERS&quot; /&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;services-info&quot;&gt;
+					&lt;h4 class=&quot;services-title-one subtitle&quot;&gt;SHELL FOR SUPPLIERS&lt;/h4&gt;
+					&lt;p&gt;Lorem ipsum dolor sit amet, con tetur adipiscing elit agenean.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;home-testimonials&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;section-title text-center&quot;&gt;
+			&lt;h2 class=&quot;title-testimonials color-title&quot;&gt;DON�T TAKE OUR WORD&lt;/h2&gt;
+			&lt;h2 class=&quot;subtitle-testimonials title-2&quot;&gt;CLIENT TESTIMONIALS&lt;/h2&gt;
+			&lt;div class=&quot;spacer-50&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;col-md-4&quot;&gt;
+				&lt;blockquote&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget leo ac nisi porta consectetur. Duis sit amet ligula turpis. Suspendisse eget hendrerit justo. Suspendisse elementum eleifend arcu in consequat. Nullam imperdiet, mauris a consequat pharetra, quam quam malesuada nisi, non scelerisque.&lt;/blockquote&gt;
+				&lt;h4 class=&quot;client-name&quot;&gt;Calvin Sims&lt;/h4&gt;
+				&lt;p class=&quot;designation&quot;&gt;Marketing Head, ABC Chemicals&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-4&quot;&gt;
+				&lt;blockquote&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget leo ac nisi porta consectetur. Duis sit amet ligula turpis. Suspendisse eget hendrerit justo. Suspendisse elementum eleifend arcu in consequat. Nullam imperdiet, mauris a consequat pharetra, quam quam malesuada nisi, non scelerisque.&lt;/blockquote&gt;
+				&lt;h4 class=&quot;client-name&quot;&gt;Bertha Gonzales&lt;/h4&gt;
+				&lt;p class=&quot;designation&quot;&gt;Divisional Manager, Corpo Inc.&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-4&quot;&gt;
+				&lt;blockquote&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget leo ac nisi porta consectetur. Duis sit amet ligula turpis. Suspendisse eget hendrerit justo. Suspendisse elementum eleifend arcu in consequat. Nullam imperdiet, mauris a consequat pharetra, quam quam malesuada nisi, non scelerisque.&lt;/blockquote&gt;
+				&lt;h4 class=&quot;client-name&quot;&gt;Brianna Hernandez&lt;/h4&gt;
+				&lt;p class=&quot;designation&quot;&gt;Founder &amp;amp; CEO, Marine Engineering&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;home-publications&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;row publications&quot;&gt;
+			&lt;div class=&quot;col-md-7 col-sm-6&quot;&gt;
+				&lt;div class=&quot;panel-group&quot; id=&quot;accordion&quot;&gt;
+					&lt;div class=&quot;panel panel-default&quot;&gt;
+						&lt;div class=&quot;panel-heading&quot;&gt;
+							&lt;h4 class=&quot;panel-title&quot;&gt;
+								&lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseOne&quot;&gt;Petrolium Engineering&lt;/a&gt;
+							&lt;/h4&gt;
+						&lt;/div&gt;
+						&lt;div id=&quot;collapseOne&quot; class=&quot;panel-collapse collapse in&quot;&gt;
+							&lt;div class=&quot;panel-body&quot;&gt;
+								&lt;p&gt;Synergistically build professional communities vis-a-vis best-of-breed paradigms. Quickly empower world-class networks with prospective methodologies. Enthusiastically morph cross functional web-readiness via virtual niche markets. Synergistically enhance one-to-one partnerships after go forward metrics. Competently facilitate alternative networks for fully tested internal or &quot;organic&quot; sources. Synergistically disintermediate an expanded array of niche markets through value-added value. Dynamically communicate cost effective results after intuitive scenarios. Distinctively impact synergistic experiences.&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;panel panel-default&quot;&gt;
+						&lt;div class=&quot;panel-heading&quot;&gt;
+							&lt;h4 class=&quot;panel-title&quot;&gt;
+								&lt;a class=&quot;collapsed&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseTwo&quot;&gt;International Trade &lt;/a&gt;
+							&lt;/h4&gt;
+						&lt;/div&gt;
+						&lt;div id=&quot;collapseTwo&quot; class=&quot;panel-collapse collapse&quot;&gt;
+							&lt;div class=&quot;panel-body&quot;&gt;
+								&lt;p&gt;Synergistically build professional communities vis-a-vis best-of-breed paradigms. Quickly empower world-class networks with prospective methodologies. Enthusiastically morph cross functional web-readiness via virtual niche markets. Synergistically enhance one-to-one partnerships after go forward metrics. Competently facilitate alternative networks for fully tested internal or &quot;organic&quot; sources. Synergistically disintermediate an expanded array of niche markets through value-added value. Dynamically communicate cost effective results after intuitive scenarios. Distinctively impact synergistic experiences.&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;panel panel-default&quot;&gt;
+						&lt;div class=&quot;panel-heading&quot;&gt;
+							&lt;h4 class=&quot;panel-title&quot;&gt;
+								&lt;a class=&quot;collapsed&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseThree&quot;&gt;Chemicals and Refining &lt;/a&gt;
+							&lt;/h4&gt;
+						&lt;/div&gt;
+						&lt;div id=&quot;collapseThree&quot; class=&quot;panel-collapse collapse&quot;&gt;
+							&lt;div class=&quot;panel-body&quot;&gt;
+								&lt;p&gt;Synergistically build professional communities vis-a-vis best-of-breed paradigms. Quickly empower world-class networks with prospective methodologies. Enthusiastically morph cross functional web-readiness via virtual niche markets. Synergistically enhance one-to-one partnerships after go forward metrics. Competently facilitate alternative networks for fully tested internal or &quot;organic&quot; sources. Synergistically disintermediate an expanded array of niche markets through value-added value. Dynamically communicate cost effective results after intuitive scenarios. Distinctively impact synergistic experiences.&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-5 col-sm-6&quot;&gt;
+				&lt;div class=&quot;plubication-downloads&quot;&gt;
+					&lt;h2 class=&quot;publish&quot;&gt;Publications&lt;/h2&gt;
+					&lt;div class=&quot;download-file&quot;&gt;
+						&lt;a href=&quot;#&quot;&gt; &lt;i class=&quot;fa fa-file-pdf-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Download PDF &lt;span&gt;1.5 MB&lt;/span&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+					&lt;p class=&quot;download-title&quot;&gt;Other Downloads&lt;/p&gt;
+					&lt;ul class=&quot;download-list&quot;&gt;
+						&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Annual Report &lt;/a&gt; &lt;span&gt;2.4 MB&lt;/span&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Sustainability Report &lt;/a&gt; &lt;span&gt;150 KB&lt;/span&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Statistical Report &lt;/a&gt; &lt;span&gt;250 KB&lt;/span&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Energy Outlook &lt;/a&gt; &lt;span&gt;1.8 MB&lt;/span&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Chairman�s Message &lt;/a&gt; &lt;span&gt;550 KB&lt;/span&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;home-news&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;section-title text-center&quot;&gt;
+			&lt;h2 class=&quot;title-blog color-title&quot;&gt;NEWS AND MEDIA&lt;/h2&gt;
+			&lt;h2 class=&quot;subtitle-blog title-2&quot;&gt;LATEST FROM BLOG&lt;/h2&gt;
+			&lt;div class=&quot;spacer-50&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;row news&quot;&gt;
+			&lt;div class=&quot;col-md-4&quot;&gt;
+				&lt;div class=&quot;blog-img-box&quot;&gt;
+					&lt;div class=&quot;blog-date&quot;&gt;
+						&lt;span class=&quot;month&quot;&gt;MAR &lt;/span&gt; &lt;span class=&quot;date&quot;&gt; 06&lt;/span&gt;
+					&lt;/div&gt;
+					&lt;a class=&quot;hover-effect&quot; href=&quot;blog-single.html&quot;&gt; &lt;img src=&quot;/assets/images/news1.jpg&quot; alt=&quot;Fuel&quot; /&gt;
+					&lt;/a&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;blog-content&quot;&gt;
+					&lt;h3&gt;
+						&lt;a href=&quot;blog-single.html&quot;&gt; FUEL TRANSPORTATION AND RAILWAY RULES &lt;/a&gt;
+					&lt;/h3&gt;
+					&lt;p&gt;
+						By &lt;a href=&quot;#&quot;&gt;Eduardo Flores&lt;/a&gt; in Transportation
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-4&quot;&gt;
+				&lt;div class=&quot;blog-img-box&quot;&gt;
+					&lt;div class=&quot;blog-date&quot;&gt;
+						&lt;span class=&quot;month&quot;&gt;Feb &lt;/span&gt; &lt;span class=&quot;date&quot;&gt; 24&lt;/span&gt;
+					&lt;/div&gt;
+					&lt;a class=&quot;hover-effect&quot; href=&quot;blog-single.html&quot;&gt; &lt;img src=&quot;/assets/images/news2.jpg&quot; alt=&quot;Field Training&quot; /&gt;
+					&lt;/a&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;blog-content&quot;&gt;
+					&lt;h3&gt;
+						&lt;a href=&quot;blog-single.html&quot;&gt; FIELD TRAINING SESSIONS FOR NEW EMPLOYEES &lt;/a&gt;
+					&lt;/h3&gt;
+					&lt;p&gt;
+						By &lt;a href=&quot;#&quot;&gt;Clinton Chavez&lt;/a&gt; in TCareers
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-4&quot;&gt;
+				&lt;div class=&quot;blog-img-box&quot;&gt;
+					&lt;div class=&quot;blog-date&quot;&gt;
+						&lt;span class=&quot;month&quot;&gt;Jan &lt;/span&gt; &lt;span class=&quot;date&quot;&gt; 17&lt;/span&gt;
+					&lt;/div&gt;
+					&lt;a class=&quot;hover-effect&quot; href=&quot;blog-single.html&quot;&gt; &lt;img src=&quot;/assets/images/news3.jpg&quot; alt=&quot;Environment&quot; /&gt;
+					&lt;/a&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;blog-content&quot;&gt;
+					&lt;h3&gt;
+						&lt;a href=&quot;blog-single.html&quot;&gt; A STUDY ON SUSTAINABILITY &amp;amp; ENVIRONMENT FACTORS &lt;/a&gt;
+					&lt;/h3&gt;
+					&lt;p&gt;
+						By &lt;a href=&quot;#&quot;&gt;Gertrude Rose&lt;/a&gt; in Environment
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;blog-btn text-center&quot;&gt;
+			&lt;a href=&quot;blog.html&quot; class=&quot;btn btn-primary&quot; role=&quot;button&quot;&gt;READ THE BLOG&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;home-partners&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;section-title text-center&quot;&gt;
+			&lt;h2 class=&quot;subtitle-testimonials title-2&quot;&gt;OUR PARTNERS&lt;/h2&gt;
+			&lt;div class=&quot;spacer-20&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;row partners&quot;&gt;
+			&lt;div class=&quot;logo-slides slides owl-carousel&quot;&gt;
+				&lt;div class=&quot;item&quot;&gt;
+					&lt;div class=&quot;partner-images&quot;&gt;
+						&lt;img src=&quot;/assets/images/partner1.png&quot; alt=&quot;Partner Image 1&quot;&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;item&quot;&gt;
+					&lt;div class=&quot;partner-images&quot;&gt;
+						&lt;img src=&quot;/assets/images/partner2.png&quot; alt=&quot;Partner Image 1&quot;&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;item&quot;&gt;
+					&lt;div class=&quot;partner-images&quot;&gt;
+						&lt;img src=&quot;/assets/images/partner3.png&quot; alt=&quot;Partner Image 1&quot;&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;item&quot;&gt;
+					&lt;div class=&quot;partner-images&quot;&gt;
+						&lt;img src=&quot;/assets/images/partner4.png&quot; alt=&quot;Partner Image 1&quot;&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;item&quot;&gt;
+					&lt;div class=&quot;partner-images&quot;&gt;
+						&lt;img src=&quot;/assets/images/partner1.png&quot; alt=&quot;Partner Image 1&quot;&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;item&quot;&gt;
+					&lt;div class=&quot;partner-images&quot;&gt;
+						&lt;img src=&quot;/assets/images/partner2.png&quot; alt=&quot;Partner Image 1&quot;&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;item&quot;&gt;
+					&lt;div class=&quot;partner-images&quot;&gt;
+						&lt;img src=&quot;/assets/images/partner3.png&quot; alt=&quot;Partner Image 1&quot;&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;item&quot;&gt;
+					&lt;div class=&quot;partner-images&quot;&gt;
+						&lt;img src=&quot;/assets/images/partner4.png&quot; alt=&quot;Partner Image 1&quot;&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+&lt;/main&gt;
+
+ &lt;footer&gt;
+	&lt;div class=&quot;footer&quot;&gt;
+		&lt;div class=&quot;container&quot;&gt;
+
+			&lt;div class=&quot;row pre-footer&quot;&gt;
+				&lt;div class=&quot;col-md-4&quot;&gt;
+					&lt;div class=&quot;contact-box&quot;&gt;
+						&lt;i class=&quot;fa fa-map-marker&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+						&lt;div class=&quot;contact-details&quot;&gt;
+							&lt;h4 class=&quot;pre-footer-title&quot;&gt;HEAD OFFICE&lt;/h4&gt;
+							&lt;p&gt;
+								PO Box 16122, Collins Street West, &lt;br&gt; Victoria 8007 Australia
+							&lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;col-md-4&quot;&gt;
+					&lt;div class=&quot;contact-box&quot;&gt;
+						&lt;i class=&quot;fa fa-phone&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+						&lt;div class=&quot;contact-details&quot;&gt;
+							&lt;h4 class=&quot;pre-footer-title&quot;&gt;CALL US&lt;/h4&gt;
+							&lt;p&gt;
+								SUPPORT: 1800 425 4646 &lt;br&gt; OFFICE: +1 (253) 2587 220
+							&lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;col-md-4&quot;&gt;
+					&lt;div class=&quot;contact-box&quot;&gt;
+						&lt;i class=&quot;fa fa-envelope&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+						&lt;div class=&quot;contact-details&quot;&gt;
+							&lt;h4 class=&quot;pre-footer-title&quot;&gt;EMAIL US&lt;/h4&gt;
+							&lt;p&gt;
+								&lt;a class=&quot;__cf_email__&quot; href=&quot;/cdn-cgi/l/email-protection&quot; data-cfemail=&quot;731b161f1f1c331c1515001b1c01161a1d17060007010a5d101c1e&quot;&gt;[email&amp;#160;protected]&lt;/a&gt;
+								&lt;script data-cfhash=&apos;f9e31&apos; type=&quot;text/javascript&quot;&gt;
+									/* &lt;![CDATA[ */!function(t, e, r, n, c, a,
+											p) {
+										try {
+											t = document.currentScript
+													|| function() {
+														for (
+																t = document
+																		.getElementsByTagName(&apos;script&apos;),
+																e = t.length; e--;)
+															if (t[e]
+																	.getAttribute(&apos;data-cfhash&apos;))
+																return t[e]
+													}();
+											if (t &amp;&amp; (c = t.previousSibling)) {
+												p = t.parentNode;
+												if (a = c
+														.getAttribute(&apos;data-cfemail&apos;)) {
+													for (e = &apos;&apos;, r = &apos;0x&apos;
+															+ a.substr(0, 2)
+															| 0, n = 2; a.length
+															- n; n += 2)
+														e += &apos;%&apos;
+																+ (&apos;0&apos; + (&apos;0x&apos;
+																		+ a
+																				.substr(
+																						n,
+																						2) ^ r)
+																		.toString(16))
+																		.slice(-2);
+													p
+															.replaceChild(
+																	document
+																			.createTextNode(decodeURIComponent(e)),
+																	c)
+												}
+												p.removeChild(t)
+											}
+										} catch (u) {
+										}
+									}()/* ]]&gt; */
+								&lt;/script&gt;
+								&lt;br&gt; &lt;a class=&quot;__cf_email__&quot; href=&quot;/cdn-cgi/l/email-protection&quot; data-cfemail=&quot;146775787167547b7272677c7b66717d7a70616760666d3a777b79&quot;&gt;[email&amp;#160;protected]&lt;/a&gt;
+								&lt;script data-cfhash=&apos;f9e31&apos; type=&quot;text/javascript&quot;&gt;
+									/* &lt;![CDATA[ */
+									!function(t, e, r, n, c, a, p) {
+										try {
+											t = document.currentScript
+													|| function() {
+														for (
+																t = document
+																		.getElementsByTagName(&apos;script&apos;),
+																e = t.length; e--;)
+															if (t[e]
+																	.getAttribute(&apos;data-cfhash&apos;))
+																return t[e]
+													}();
+											if (t &amp;&amp; (c = t.previousSibling)) {
+												p = t.parentNode;
+												if (a = c
+														.getAttribute(&apos;data-cfemail&apos;)) {
+													for (e = &apos;&apos;, r = &apos;0x&apos;
+															+ a.substr(0, 2)
+															| 0, n = 2; a.length
+															- n; n += 2)
+														e += &apos;%&apos;
+																+ (&apos;0&apos; + (&apos;0x&apos;
+																		+ a
+																				.substr(
+																						n,
+																						2) ^ r)
+																		.toString(16))
+																		.slice(-2);
+													p
+															.replaceChild(
+																	document
+																			.createTextNode(decodeURIComponent(e)),
+																	c)
+												}
+												p.removeChild(t)
+											}
+										} catch (u) {
+										}
+									}()/* ]]&gt; */
+								&lt;/script&gt;
+							&lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+
+
+			&lt;div class=&quot;row widgets&quot;&gt;
+				&lt;div class=&quot;col-md-4 col-sm-6&quot;&gt;
+					&lt;div class=&quot;about-txt widget&quot;&gt;
+						&lt;img src=&quot;images/footer-logo.png&quot; alt=&quot;logo&quot; /&gt;
+						&lt;p&gt;Collaboratively deliver partnerships progressive alignments. Assertively premier supply chains before emerging solutions. Monetize high-payoff action items before wireless internal or &quot;organic&quot; sources exceptional action items.&lt;/p&gt;
+						&lt;div class=&quot;widgets-social&quot;&gt;
+							&lt;a href=&quot;#&quot;&gt; &lt;i class=&quot;fa fa-facebook&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+							&lt;/a&gt; &lt;a href=&quot;#&quot;&gt; &lt;i class=&quot;fa fa-twitter&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; &lt;a href=&quot;#&quot;&gt; &lt;i class=&quot;fa fa-linkedin&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; &lt;a href=&quot;#&quot;&gt; &lt;i class=&quot;fa fa-instagram&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;col-md-2 col-sm-6&quot;&gt;
+					&lt;div class=&quot;quick-links widget&quot;&gt;
+						&lt;h2 class=&quot;widget-title&quot;&gt;QUICK LINKS&lt;/h2&gt;
+						&lt;ul&gt;
+							&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Careers &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Contact &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Market Info &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Technology &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Latest News &lt;/a&gt;&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;spacer-50 visible-sm&quot;&gt;&lt;/div&gt;
+				&lt;div class=&quot;col-md-3 col-sm-6&quot;&gt;
+					&lt;div class=&quot;our-services widget&quot;&gt;
+						&lt;h2 class=&quot;widget-title&quot;&gt;OUR SERVICES&lt;/h2&gt;
+						&lt;ul&gt;
+							&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Chemicals &amp;amp; Commercial Fuels &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Aviation Fuels &amp;amp; Marine Fuels &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Lubricants Services &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Liquified Petrolium Gas &lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;#&quot;&gt; Shell Sulphur, Trading &amp;amp; Supply &lt;/a&gt;&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;col-md-3 col-sm-6&quot;&gt;
+					&lt;div class=&quot;newsletter widget&quot;&gt;
+						&lt;h2 class=&quot;widget-title&quot;&gt;Newsletter&lt;/h2&gt;
+						&lt;p&gt;Subscribe to our newsletters to receive latest news and updates.&lt;/p&gt;
+
+						&lt;form action=&quot;php/subscribe.php&quot; id=&quot;subscribeform&quot; method=&quot;post&quot;&gt;
+							&lt;div class=&quot;form-group&quot;&gt;
+								&lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; placeholder=&quot;Enter your email&quot; class=&quot;form-control&quot; title=&quot;Please enter your email&quot; data-msg-email=&quot;Please enter a valid email&quot;&gt;
+							&lt;/div&gt;
+							&lt;button type=&quot;submit&quot; class=&quot;btn btn-block&quot; id=&quot;js-subscribe-btn&quot;&gt;Subscribe Now!&lt;/button&gt;
+							&lt;div id=&quot;js-subscribe-result&quot; data-success-msg=&quot;Done. Subscribed&quot; data-error-msg=&quot;Oops. Error!&quot;&gt;&lt;/div&gt;
+						&lt;/form&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;copyright&quot;&gt;
+		&lt;div class=&quot;container&quot;&gt;
+			&lt;div class=&quot;row copyright-bar&quot;&gt;
+				&lt;div class=&quot;col-md-6&quot;&gt;
+					&lt;p&gt;Copyright � 2016 Offshore Industries. All rights reserved.&lt;/p&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;col-md-6 text-right&quot;&gt;
+					&lt;p&gt;
+						&lt;a href=&quot;#&quot;&gt; Terms of use&lt;/a&gt; &lt;a href=&quot;#&quot;&gt;Privacy Policy&lt;/a&gt; &lt;span&gt; | &lt;/span&gt; Made with &lt;i class=&quot;fa fa-heart&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; by Surjith S M
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+&lt;/footer&gt;
+
+
+
+	&lt;/div&gt;
+	&lt;!-- /container --&gt;
+	&lt;script type=&quot;text/javascript&quot; src=&quot;/assets/webjars/jquery/2.1.3/jquery.js&quot;&gt;&lt;/script&gt;
+	&lt;script type=&quot;text/javascript&quot; src=&quot;/assets/webjars/bootstrap/3.3.4/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+	&lt;a href=&quot;#0&quot; class=&quot;cd-top&quot;&gt; Top &lt;/a&gt;
+	&lt;/div&gt;
+
+
+
+	&lt;script src=&quot;/assets/js/jquery.min.js&quot;&gt;&lt;/script&gt;
+
+	&lt;script src=&quot;/assets/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+
+	&lt;script src=&quot;/assets/js/jquery.flexslider-min.js&quot;&gt;&lt;/script&gt;
+
+	&lt;script src=&quot;/assets/js/owl.carousel.min.js&quot;&gt;&lt;/script&gt;
+
+	&lt;script src=&quot;/assets/js/waypoints.min.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;/assets/js/jquery.counterup.min.js&quot;&gt;&lt;/script&gt;
+
+	&lt;script src=&quot;/assets/js/back-to-top.js&quot;&gt;&lt;/script&gt;
+
+	&lt;script src=&quot;/assets/js/validate.js&quot;&gt;&lt;/script&gt;
+
+	&lt;script src=&quot;/assets/js/subscribe.js&quot;&gt;&lt;/script&gt;
+
+	&lt;script src=&quot;/assets/js/main.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:865)
+	at org.junit.Assert.assertThat(Assert.java:832)
+	at controllers.ApiControllerDocTesterTest.testGetIndex(ApiControllerDocTesterTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>07:37:58.970 [main] INFO  ninja.utils.NinjaModeHelper - Ninja is running in mode prod
+07:37:59.064 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1234ms
+07:37:59.321 [main] WARN  o.e.j.server.handler.ContextHandler - Empty contextPath
+07:37:59.337 [main] INFO  ninja.standalone.NinjaJetty - Trying to start jetty v9.2.10.v20150310 on &lt;all&gt;:1000, 8443/ssl
+07:37:59.337 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.2.10.v20150310
+07:37:59.384 [main] INFO  ninja.Bootstrap - Successfully configured Logback.
+07:37:59.384 [main] INFO  ninja.Bootstrap - Enabling Ninja classic configuration
+07:38:00.213 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
+07:38:00.213 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
+07:38:00.260 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+07:38:00.260 [main] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
+07:38:00.260 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+07:38:00.260 [main] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =&gt;  ninja.template.TemplateEngineJsonP
+07:38:00.260 [main] INFO  n.template.TemplateEngineManagerImpl - application/json        =&gt;  ninja.template.TemplateEngineJson
+07:38:00.260 [main] INFO  n.template.TemplateEngineManagerImpl - application/xml         =&gt;  ninja.template.TemplateEngineXml
+07:38:00.260 [main] INFO  n.template.TemplateEngineManagerImpl - text/html               =&gt;  ninja.template.TemplateEngineFreemarker
+07:38:00.260 [main] INFO  n.template.TemplateEngineManagerImpl - text/plain              =&gt;  ninja.template.TemplateEngineText
+07:38:00.276 [main] INFO  n.b.BodyParserEngineManagerImpl - ----------------------------------------------------------------------------
+07:38:00.276 [main] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
+07:38:00.276 [main] INFO  n.b.BodyParserEngineManagerImpl - ----------------------------------------------------------------------------
+07:38:00.276 [main] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =&gt;  ninja.bodyparser.BodyParserEngineJson
+07:38:00.276 [main] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =&gt;  ninja.bodyparser.BodyParserEnginePost
+07:38:00.276 [main] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =&gt;  ninja.bodyparser.BodyParserEngineXml
+07:38:00.276 [main] INFO  ninja.Bootstrap - Ninja injector started in 892 ms.
+07:38:00.307 [main] INFO  ninja.RouterImpl - ------------------------------------------------------------------------------------------
+07:38:00.307 [main] INFO  ninja.RouterImpl - Registered routes
+07:38:00.307 [main] INFO  ninja.RouterImpl - ------------------------------------------------------------------------------------------
+07:38:00.307 [main] INFO  ninja.RouterImpl - GET /                               =&gt;  controllers.ApplicationController.index()
+07:38:00.307 [main] INFO  ninja.RouterImpl - GET /hello_world.json               =&gt;  controllers.ApplicationController.helloWorldJson()
+07:38:00.307 [main] INFO  ninja.RouterImpl - GET /assets/webjars/{fileName: .*}  =&gt;  ninja.AssetsController.serveWebJars()
+07:38:00.307 [main] INFO  ninja.RouterImpl - GET /assets/{fileName: .*}          =&gt;  ninja.AssetsController.serveStatic()
+07:38:00.307 [main] INFO  ninja.RouterImpl - GET /.*                             =&gt;  controllers.ApplicationController.index()
+07:38:00.307 [main] INFO  ninja.NinjaDefault - 
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \  http://www.ninjaframework.org
+\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
+     web\/framework   \/                  \/   5.8.0
+
+07:38:00.307 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+07:38:00.338 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 31ms
+07:38:00.338 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@24b6b8f6{/,null,AVAILABLE}
+07:38:00.401 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@5974109{HTTP/1.1}{0.0.0.0:1000}
+07:38:00.616 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@6e521c1e{SSL-HTTP/1.1}{0.0.0.0:8443}
+07:38:00.616 [main] INFO  org.eclipse.jetty.server.Server - Started @2787ms
+07:38:00.616 [main] INFO  ninja.standalone.NinjaJetty - Started jetty v9.2.10.v20150310 on &lt;all&gt;:1000, 8443/ssl
+07:38:00.616 [main] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+07:38:00.616 [main] INFO  ninja.standalone.NinjaJetty - Ninja application running at
+07:38:00.616 [main] INFO  ninja.standalone.NinjaJetty -  =&gt; http://localhost:1000
+07:38:00.616 [main] INFO  ninja.standalone.NinjaJetty -  =&gt; https://localhost:8443
+07:38:00.616 [main] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+07:38:01.151 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+07:38:01.151 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 0ms
+07:38:01.151 [main] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@24b6b8f6{/,null,UNAVAILABLE}
+07:38:01.151 [main] INFO  ninja.standalone.NinjaJetty - Trying to stop jetty on &lt;all&gt;:1000, 8443/ssl
+07:38:01.151 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@5974109{HTTP/1.1}{0.0.0.0:1000}
+07:38:01.151 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@6e521c1e{SSL-HTTP/1.1}{0.0.0.0:8443}
+07:38:01.167 [main] INFO  ninja.standalone.NinjaJetty - Stopped jetty on &lt;all&gt;:1000, 8443/ssl
+</system-out>
+  </testcase>
+  <testcase classname="controllers.ApiControllerDocTesterTest" name="testGetHelloWorldJson" time="0.172"/>
+</testsuite>
